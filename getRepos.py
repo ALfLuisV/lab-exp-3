@@ -3,7 +3,7 @@ import json
 import time
 import os 
 
-GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
+GITHUB_TOKEN = ""
 
 
 URL = "https://api.github.com/graphql"
@@ -11,8 +11,57 @@ URL = "https://api.github.com/graphql"
 # --- MUDANÇA 1: Query Corrigida ---
 # A variável $cursor precisa ser usada dentro da função search(after: $cursor)
 # Também adicionei 'language:Java' para corresponder ao seu objetivo (opcional)
-QUERY = """
-query TopRepositories($cursor: String) {
+# QUERY = """
+# query TopRepositories($cursor: String) {
+#   search(
+#     query: "is:public stars:>1000 sort:stars-desc"
+#     type: REPOSITORY
+#     first: 100
+#     after: $cursor
+#   ) {
+#     pageInfo {
+#       endCursor
+#       hasNextPage
+#     }
+#     nodes {
+#       ... on Repository {
+#         nameWithOwner
+#         pullRequests(states: [MERGED, CLOSED], first: 100) {
+#           totalCount
+#           nodes {
+#             ... on PullRequest {
+#               title
+#               number
+#               state
+#               url
+#               createdAt
+#               mergedAt
+#               closedAt
+#               author {
+#                 login
+#               }
+#               reviews(first: 1) {
+#                 totalCount
+#               }
+#               comments {
+#                 totalCount
+#               }
+#               additions
+#               deletions
+#               changedFiles
+#             }
+#           }
+#         }
+#       }
+#     }
+#   }
+# }
+# """
+
+
+
+GET_REPOS_QUERY = '''
+query GetTopRepositoriesList($cursor: String) {
   search(
     query: "is:public stars:>1000 sort:stars-desc"
     type: REPOSITORY
@@ -25,38 +74,50 @@ query TopRepositories($cursor: String) {
     }
     nodes {
       ... on Repository {
+        # **A ÚNICA INFORMAÇÃO NECESSÁRIA É O NOME COMPLETO**
+        # Ele será usado como argumento na segunda query.
         nameWithOwner
-        pullRequests(states: [MERGED, CLOSED], first: 100) {
-          totalCount
-          nodes {
-            ... on PullRequest {
-              title
-              number
-              state
-              url
-              createdAt
-              mergedAt
-              closedAt
-              author {
-                login
-              }
-              reviews(first: 1) {
-                totalCount
-              }
-              comments {
-                totalCount
-              }
-              additions
-              deletions
-              changedFiles
-            }
+      }
+    }
+  }
+}'''
+
+
+GET_REPOS_INFO_QUERY = '''
+query GetRepositoryPullRequestDetails($owner: String!, $name: String!) {
+  repository(owner: $owner, name: $name) {
+    # Aqui, a query começa no nível do repositório específico
+    nameWithOwner
+
+    pullRequests(states: [MERGED, CLOSED], first: 100) {
+      totalCount
+      nodes {
+        ... on PullRequest {
+          title
+          number
+          state
+          url
+          createdAt
+          mergedAt
+          closedAt
+          author {
+            login
           }
+          reviews(first: 1) {
+            totalCount
+          }
+          comments {
+            totalCount
+          }
+          additions
+          deletions
+          changedFiles
         }
       }
     }
   }
 }
-"""
+'''
 
 def run_query(query, variables):
     """
@@ -90,7 +151,7 @@ def run_query(query, variables):
     
     raise Exception(f"Query falhou após {max_retries} tentativas.")
 
-def get_top_repos():
+def get_top_repos(query):
     all_repos = []
     cursor = None
     
@@ -104,7 +165,7 @@ def get_top_repos():
         variables = {"cursor": cursor}
         
         try:
-            result = run_query(QUERY, variables)
+            result = run_query(query, variables)
         except Exception as e:
             print(f"Erro fatal ao buscar a página {i + 1}: {e}")
             break
@@ -142,7 +203,7 @@ if __name__ == "__main__":
     if not GITHUB_TOKEN:
         print("ERRO: A variável de ambiente GITHUB_TOKEN não está definida.")
     else:
-        repositories = get_top_repos()
+        repositories = get_top_repos(GET_REPOS_QUERY)
         
         if repositories:
             # --- MUDANÇA 4: Usando modo 'w' para escrever o arquivo JSON ---
@@ -151,3 +212,13 @@ if __name__ == "__main__":
             with open(output_filename, "w", encoding="utf-8") as f:
                 json.dump(repositories, f, ensure_ascii=False, indent=2)
             print(f"Dados salvos com sucesso em '{output_filename}'")
+        
+        # repositories_INFO = get_top_repos(GET_REPOS_INFO_QUERY)
+        
+        # if repositories_INFO:
+        #     # --- MUDANÇA 4: Usando modo 'w' para escrever o arquivo JSON ---
+        #     # O modo 'a' (append) corromperia o arquivo JSON em execuções múltiplas.
+        #     output_filename = "github_repo_data.json"
+        #     with open(output_filename, "w", encoding="utf-8") as f:
+        #         json.dump(repositories_INFO, f, ensure_ascii=False, indent=2)
+        #     print(f"Dados salvos com sucesso em '{output_filename}'")
