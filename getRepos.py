@@ -4,61 +4,11 @@ import time
 import os 
 
 GITHUB_TOKEN = ""
-
-
-URL = "https://api.github.com/graphql"
-
-# --- MUDANÇA 1: Query Corrigida ---
-# A variável $cursor precisa ser usada dentro da função search(after: $cursor)
-# Também adicionei 'language:Java' para corresponder ao seu objetivo (opcional)
-# QUERY = """
-# query TopRepositories($cursor: String) {
-#   search(
-#     query: "is:public stars:>1000 sort:stars-desc"
-#     type: REPOSITORY
-#     first: 100
-#     after: $cursor
-#   ) {
-#     pageInfo {
-#       endCursor
-#       hasNextPage
-#     }
-#     nodes {
-#       ... on Repository {
-#         nameWithOwner
-#         pullRequests(states: [MERGED, CLOSED], first: 100) {
-#           totalCount
-#           nodes {
-#             ... on PullRequest {
-#               title
-#               number
-#               state
-#               url
-#               createdAt
-#               mergedAt
-#               closedAt
-#               author {
-#                 login
-#               }
-#               reviews(first: 1) {
-#                 totalCount
-#               }
-#               comments {
-#                 totalCount
-#               }
-#               additions
-#               deletions
-#               changedFiles
-#             }
-#           }
-#         }
-#       }
-#     }
-#   }
-# }
-# """
-
-
+GITHUB_API_URL = "https://api.github.com/graphql"
+HEADERS = {
+    "Authorization": f"bearer {GITHUB_TOKEN}",
+    "Content-Type": "application/json",
+}
 
 GET_REPOS_QUERY = '''
 query GetTopRepositoriesList($cursor: String) {
@@ -83,7 +33,7 @@ query GetTopRepositoriesList($cursor: String) {
 }'''
 
 
-GET_REPOS_INFO_QUERY = '''
+REPO_PR_DETAILS_QUERY  = '''
 query GetRepositoryPullRequestDetails($owner: String!, $name: String!) {
   repository(owner: $owner, name: $name) {
     # Aqui, a query começa no nível do repositório específico
@@ -151,70 +101,168 @@ def run_query(query, variables):
     
     raise Exception(f"Query falhou após {max_retries} tentativas.")
 
-def get_top_repos(query):
-    all_repos = []
-    cursor = None
+# def get_top_repos(query):
+#     all_repos = []
+#     cursor = None
     
-    # Vamos buscar 2 páginas para obter os 200 repositórios mais populares
-    num_pages_to_fetch = 2
+#     # Vamos buscar 2 páginas para obter os 200 repositórios mais populares
+#     num_pages_to_fetch = 2
     
-    print("Iniciando a coleta de dados do GitHub...")
+#     print("Iniciando a coleta de dados do GitHub...")
     
-    for i in range(num_pages_to_fetch):
-        print(f"Buscando página {i + 1}/{num_pages_to_fetch}...")
-        variables = {"cursor": cursor}
+#     for i in range(num_pages_to_fetch):
+#         print(f"Buscando página {i + 1}/{num_pages_to_fetch}...")
+#         variables = {"cursor": cursor}
+        
+#         try:
+#             result = run_query(query, variables)
+#         except Exception as e:
+#             print(f"Erro fatal ao buscar a página {i + 1}: {e}")
+#             break
+        
+#         if "errors" in result:
+#             print("Erro na API do GitHub:", result["errors"])
+#             break
+
+#         search_data = result.get("data", {}).get("search", {})
+#         if not search_data:
+#             print("Não foram encontrados dados na resposta da API.")
+#             break
+
+#         # --- MUDANÇA 2: Acumulando os dados corretamente ---
+#         # Usamos extend() para adicionar os itens da lista 'nodes' à nossa lista principal
+#         # Em vez de adicionar a página inteira com append()
+#         if 'nodes' in search_data:
+#             all_repos.extend(search_data['nodes'])
+        
+#         page_info = search_data.get('pageInfo', {})
+#         has_next_page = page_info.get('hasNextPage', False)
+        
+#         # --- MUDANÇA 3: Atualizando o cursor para a próxima página ---
+#         if has_next_page:
+#             cursor = page_info.get('endCursor')
+#         else:
+#             print("Chegamos à última página de resultados.")
+#             break
+            
+#     print(f"\nColeta finalizada. Total de {len(all_repos)} repositórios encontrados.")
+#     return all_repos
+
+
+def fetch_repo_details_and_append_line(
+    full_repo_name: str, 
+    output_filename: str = "repositorios_coletados.jsonl", 
+    max_retries: int = 3
+) -> bool:
+    """
+    Busca detalhes de PRs de um repositório específico, com mecanismo de repetição (retry).
+    Anexa o resultado ao arquivo de saída como uma nova linha JSON (JSON Lines).
+
+    Args:
+        full_repo_name (str): Nome completo do repositório (ex: 'owner/name').
+        output_filename (str): Nome do arquivo de saída no formato JSON Lines.
+        max_retries (int): Número máximo de tentativas em caso de falha.
+
+    Returns:
+        bool: True se a coleta e o salvamento foram bem-sucedidos, False caso contrário.
+    """
+    print(f"--- Processando Repositório: {full_repo_name['nameWithOwner']} ---")
+    
+    try:
+        # 1. Separa Owner e Name
+        owner, name = full_repo_name['nameWithOwner'].split('/')
+    except ValueError:
+        print(f"ERRO: Nome de repositório inválido. Use o formato 'dono/nome'.")
+        return False
+
+    variables = {"owner": owner, "name": name}
+    attempt = 0
+    
+    while attempt < max_retries:
+        attempt += 1
         
         try:
-            result = run_query(query, variables)
-        except Exception as e:
-            print(f"Erro fatal ao buscar a página {i + 1}: {e}")
-            break
-        
-        if "errors" in result:
-            print("Erro na API do GitHub:", result["errors"])
-            break
+            # 2. Executa a Requisição com Timeout
+            data = {'query': REPO_PR_DETAILS_QUERY, 'variables': variables}
+            response = requests.post(GITHUB_API_URL, headers=HEADERS, json=data, timeout=15)
 
-        search_data = result.get("data", {}).get("search", {})
-        if not search_data:
-            print("Não foram encontrados dados na resposta da API.")
-            break
-
-        # --- MUDANÇA 2: Acumulando os dados corretamente ---
-        # Usamos extend() para adicionar os itens da lista 'nodes' à nossa lista principal
-        # Em vez de adicionar a página inteira com append()
-        if 'nodes' in search_data:
-            all_repos.extend(search_data['nodes'])
-        
-        page_info = search_data.get('pageInfo', {})
-        has_next_page = page_info.get('hasNextPage', False)
-        
-        # --- MUDANÇA 3: Atualizando o cursor para a próxima página ---
-        if has_next_page:
-            cursor = page_info.get('endCursor')
-        else:
-            print("Chegamos à última página de resultados.")
-            break
+            # 3. Verifica o Status da Resposta
+            if response.status_code == 200:
+                result = response.json()
+                
+                # Tratamento de Erros GraphQL (lógicos)
+                if 'errors' in result:
+                    error_msg = result['errors'][0]['message'] if 'message' in result['errors'][0] else "Erro GraphQL desconhecido."
+                    if "Could not resolve to a Repository" in error_msg:
+                         print(f"FALHA IRRECUPERÁVEL: Repositório '{full_repo_name}' não existe ou é privado.")
+                         return False
+                    else:
+                         raise Exception(f"Erro GraphQL: {error_msg}")
+                
+                # 4. Verifica e Salva os Dados
+                if 'data' in result and result['data']['repository']:
+                    repo_data = result['data']['repository']
+                    pr_count = repo_data['pullRequests']['totalCount']
+                    
+                    # Salva os Dados em modo APPEND ('a') como JSON Lines
+                    with open(output_filename, 'a', encoding='utf-8') as f:
+                        # json.dumps serializa o objeto Python em uma string JSON de linha única
+                        f.write(json.dumps(repo_data, ensure_ascii=False) + '\n')
+                    
+                    print(f"SUCESSO! Dados do repositório com {pr_count} PRs anexados a '{output_filename}'.")
+                    return True # Sai da função após o sucesso
+                
+                else:
+                    raise Exception("Resposta válida, mas campo 'repository' é nulo ou vazio.")
             
-    print(f"\nColeta finalizada. Total de {len(all_repos)} repositórios encontrados.")
-    return all_repos
+            # Tratamento de Erros de Status HTTP
+            elif response.status_code == 401:
+                print("FALHA IRRECUPERÁVEL: Token de Acesso Inválido (401 Unauthorized).")
+                return False
+            
+            else:
+                 raise requests.exceptions.RequestException(f"Erro na Requisição: {response.status_code}")
+
+
+        except (requests.exceptions.Timeout, requests.exceptions.ConnectionError, requests.exceptions.RequestException, Exception) as e:
+            
+            # Tratamento de Rate Limit do GitHub (código 403)
+            if 'response' in locals() and response.status_code == 403 and 'X-RateLimit-Remaining' in response.headers and int(response.headers['X-RateLimit-Remaining']) == 0:
+                print("⚠️ ATENÇÃO: Limite de taxa (Rate Limit) do GitHub atingido. Pausando por 60 segundos...")
+                time.sleep(60)
+            
+            wait_time = 2 ** attempt
+            print(f"Tentativa {attempt} falhou ({type(e).__name__}: {e}). Aguardando {wait_time} segundos antes de tentar novamente...")
+            time.sleep(wait_time)
+            
+    # Se o loop terminar sem sucesso, informa a falha final
+    print(f"FALHA FINAL: Não foi possível obter e salvar os dados de '{full_repo_name}' após {max_retries} tentativas.")
+    return False
 
 # --- Execução Principal ---
 if __name__ == "__main__":
     if not GITHUB_TOKEN:
         print("ERRO: A variável de ambiente GITHUB_TOKEN não está definida.")
     else:
-        repositories = get_top_repos(GET_REPOS_QUERY)
+        # repositories = get_top_repos(GET_REPOS_QUERY)
         
-        if repositories:
-            # --- MUDANÇA 4: Usando modo 'w' para escrever o arquivo JSON ---
-            # O modo 'a' (append) corromperia o arquivo JSON em execuções múltiplas.
-            output_filename = "github_data.json"
-            with open(output_filename, "w", encoding="utf-8") as f:
-                json.dump(repositories, f, ensure_ascii=False, indent=2)
-            print(f"Dados salvos com sucesso em '{output_filename}'")
+        # if repositories:
+        #     # --- MUDANÇA 4: Usando modo 'w' para escrever o arquivo JSON ---
+        #     # O modo 'a' (append) corromperia o arquivo JSON em execuções múltiplas.
+        #     output_filename = "github_data.json"
+        #     with open(output_filename, "w", encoding="utf-8") as f:
+        #         json.dump(repositories, f, ensure_ascii=False, indent=2)
+        #     print(f"Dados salvos com sucesso em '{output_filename}'")
         
         # repositories_INFO = get_top_repos(GET_REPOS_INFO_QUERY)
+
+        with open("repositorios_filtrados_em_lotes.json", 'r', encoding='utf-8') as arquivo:
+            dados_json = json.load(arquivo);
         
+        for repo in dados_json:
+            fetch_repo_details_and_append_line(repo, output_filename="repo_details.json")
+
+
         # if repositories_INFO:
         #     # --- MUDANÇA 4: Usando modo 'w' para escrever o arquivo JSON ---
         #     # O modo 'a' (append) corromperia o arquivo JSON em execuções múltiplas.
