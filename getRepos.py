@@ -63,7 +63,7 @@ def run_query(query, variables):
     Função para executar a query GraphQL, com retentativas e timeout.
     """
     headers = {"Authorization": f"Bearer {GITHUB_TOKEN}"}
-    max_retries = 5
+    max_retries = 7
     base_wait_time = 5
 
     for attempt in range(max_retries):
