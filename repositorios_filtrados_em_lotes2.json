@@ -1,0 +1,1136 @@
+[
+  {
+    "nameWithOwner": "freeCodeCamp/freeCodeCamp",
+    "pullRequests": {
+      "totalCount": 41183
+    }
+  },
+  {
+    "nameWithOwner": "codecrafters-io/build-your-own-x",
+    "pullRequests": {
+      "totalCount": 295
+    }
+  },
+  {
+    "nameWithOwner": "sindresorhus/awesome",
+    "pullRequests": {
+      "totalCount": 2139
+    }
+  },
+  {
+    "nameWithOwner": "EbookFoundation/free-programming-books",
+    "pullRequests": {
+      "totalCount": 10637
+    }
+  },
+  {
+    "nameWithOwner": "public-apis/public-apis",
+    "pullRequests": {
+      "totalCount": 2985
+    }
+  },
+  {
+    "nameWithOwner": "kamranahmedse/developer-roadmap",
+    "pullRequests": {
+      "totalCount": 5434
+    }
+  },
+  {
+    "nameWithOwner": "jwasham/coding-interview-university",
+    "pullRequests": {
+      "totalCount": 992
+    }
+  },
+  {
+    "nameWithOwner": "donnemartin/system-design-primer",
+    "pullRequests": {
+      "totalCount": 334
+    }
+  },
+  {
+    "nameWithOwner": "996icu/996.ICU",
+    "pullRequests": {
+      "totalCount": 1910
+    }
+  },
+  {
+    "nameWithOwner": "vinta/awesome-python",
+    "pullRequests": {
+      "totalCount": 1575
+    }
+  },
+  {
+    "nameWithOwner": "awesome-selfhosted/awesome-selfhosted",
+    "pullRequests": {
+      "totalCount": 2986
+    }
+  },
+  {
+    "nameWithOwner": "practical-tutorials/project-based-learning",
+    "pullRequests": {
+      "totalCount": 352
+    }
+  },
+  {
+    "nameWithOwner": "facebook/react",
+    "pullRequests": {
+      "totalCount": 18097
+    }
+  },
+  {
+    "nameWithOwner": "TheAlgorithms/Python",
+    "pullRequests": {
+      "totalCount": 10725
+    }
+  },
+  {
+    "nameWithOwner": "vuejs/vue",
+    "pullRequests": {
+      "totalCount": 2321
+    }
+  },
+  {
+    "nameWithOwner": "torvalds/linux",
+    "pullRequests": {
+      "totalCount": 1230
+    }
+  },
+  {
+    "nameWithOwner": "ossu/computer-science",
+    "pullRequests": {
+      "totalCount": 468
+    }
+  },
+  {
+    "nameWithOwner": "trekhleb/javascript-algorithms",
+    "pullRequests": {
+      "totalCount": 547
+    }
+  },
+  {
+    "nameWithOwner": "tensorflow/tensorflow",
+    "pullRequests": {
+      "totalCount": 58620
+    }
+  },
+  {
+    "nameWithOwner": "trimstray/the-book-of-secret-knowledge",
+    "pullRequests": {
+      "totalCount": 223
+    }
+  },
+  {
+    "nameWithOwner": "getify/You-Dont-Know-JS",
+    "pullRequests": {
+      "totalCount": 877
+    }
+  },
+  {
+    "nameWithOwner": "CyC2018/CS-Notes",
+    "pullRequests": {
+      "totalCount": 552
+    }
+  },
+  {
+    "nameWithOwner": "ohmyzsh/ohmyzsh",
+    "pullRequests": {
+      "totalCount": 7312
+    }
+  },
+  {
+    "nameWithOwner": "Significant-Gravitas/AutoGPT",
+    "pullRequests": {
+      "totalCount": 6320
+    }
+  },
+  {
+    "nameWithOwner": "microsoft/vscode",
+    "pullRequests": {
+      "totalCount": 43510
+    }
+  },
+  {
+    "nameWithOwner": "twbs/bootstrap",
+    "pullRequests": {
+      "totalCount": 15500
+    }
+  },
+  {
+    "nameWithOwner": "flutter/flutter",
+    "pullRequests": {
+      "totalCount": 65330
+    }
+  },
+  {
+    "nameWithOwner": "jackfrued/Python-100-Days",
+    "pullRequests": {
+      "totalCount": 206
+    }
+  },
+  {
+    "nameWithOwner": "github/gitignore",
+    "pullRequests": {
+      "totalCount": 4229
+    }
+  },
+  {
+    "nameWithOwner": "jlevy/the-art-of-command-line",
+    "pullRequests": {
+      "totalCount": 467
+    }
+  },
+  {
+    "nameWithOwner": "AUTOMATIC1111/stable-diffusion-webui",
+    "pullRequests": {
+      "totalCount": 3195
+    }
+  },
+  {
+    "nameWithOwner": "avelino/awesome-go",
+    "pullRequests": {
+      "totalCount": 4798
+    }
+  },
+  {
+    "nameWithOwner": "ollama/ollama",
+    "pullRequests": {
+      "totalCount": 3598
+    }
+  },
+  {
+    "nameWithOwner": "Snailclimb/JavaGuide",
+    "pullRequests": {
+      "totalCount": 1495
+    }
+  },
+  {
+    "nameWithOwner": "huggingface/transformers",
+    "pullRequests": {
+      "totalCount": 21971
+    }
+  },
+  {
+    "nameWithOwner": "n8n-io/n8n",
+    "pullRequests": {
+      "totalCount": 14172
+    }
+  },
+  {
+    "nameWithOwner": "airbnb/javascript",
+    "pullRequests": {
+      "totalCount": 1572
+    }
+  },
+  {
+    "nameWithOwner": "ytdl-org/youtube-dl",
+    "pullRequests": {
+      "totalCount": 4342
+    }
+  },
+  {
+    "nameWithOwner": "f/awesome-chatgpt-prompts",
+    "pullRequests": {
+      "totalCount": 429
+    }
+  },
+  {
+    "nameWithOwner": "vercel/next.js",
+    "pullRequests": {
+      "totalCount": 31309
+    }
+  },
+  {
+    "nameWithOwner": "langflow-ai/langflow",
+    "pullRequests": {
+      "totalCount": 6287
+    }
+  },
+  {
+    "nameWithOwner": "yangshun/tech-interview-handbook",
+    "pullRequests": {
+      "totalCount": 556
+    }
+  },
+  {
+    "nameWithOwner": "yt-dlp/yt-dlp",
+    "pullRequests": {
+      "totalCount": 3710
+    }
+  },
+  {
+    "nameWithOwner": "golang/go",
+    "pullRequests": {
+      "totalCount": 4314
+    }
+  },
+  {
+    "nameWithOwner": "Genymobile/scrcpy",
+    "pullRequests": {
+      "totalCount": 506
+    }
+  },
+  {
+    "nameWithOwner": "labuladong/fucking-algorithm",
+    "pullRequests": {
+      "totalCount": 505
+    }
+  },
+  {
+    "nameWithOwner": "Chalarangelo/30-seconds-of-code",
+    "pullRequests": {
+      "totalCount": 1631
+    }
+  },
+  {
+    "nameWithOwner": "microsoft/PowerToys",
+    "pullRequests": {
+      "totalCount": 6609
+    }
+  },
+  {
+    "nameWithOwner": "facebook/react-native",
+    "pullRequests": {
+      "totalCount": 24402
+    }
+  },
+  {
+    "nameWithOwner": "electron/electron",
+    "pullRequests": {
+      "totalCount": 26340
+    }
+  },
+  {
+    "nameWithOwner": "kubernetes/kubernetes",
+    "pullRequests": {
+      "totalCount": 85287
+    }
+  },
+  {
+    "nameWithOwner": "krahets/hello-algo",
+    "pullRequests": {
+      "totalCount": 1196
+    }
+  },
+  {
+    "nameWithOwner": "langchain-ai/langchain",
+    "pullRequests": {
+      "totalCount": 15427
+    }
+  },
+  {
+    "nameWithOwner": "langgenius/dify",
+    "pullRequests": {
+      "totalCount": 9197
+    }
+  },
+  {
+    "nameWithOwner": "justjavac/free-programming-books-zh_CN",
+    "pullRequests": {
+      "totalCount": 432
+    }
+  },
+  {
+    "nameWithOwner": "nodejs/node",
+    "pullRequests": {
+      "totalCount": 37495
+    }
+  },
+  {
+    "nameWithOwner": "ripienaar/free-for-dev",
+    "pullRequests": {
+      "totalCount": 3665
+    }
+  },
+  {
+    "nameWithOwner": "open-webui/open-webui",
+    "pullRequests": {
+      "totalCount": 4575
+    }
+  },
+  {
+    "nameWithOwner": "d3/d3",
+    "pullRequests": {
+      "totalCount": 1178
+    }
+  },
+  {
+    "nameWithOwner": "mrdoob/three.js",
+    "pullRequests": {
+      "totalCount": 18367
+    }
+  },
+  {
+    "nameWithOwner": "excalidraw/excalidraw",
+    "pullRequests": {
+      "totalCount": 4765
+    }
+  },
+  {
+    "nameWithOwner": "axios/axios",
+    "pullRequests": {
+      "totalCount": 1833
+    }
+  },
+  {
+    "nameWithOwner": "rust-lang/rust",
+    "pullRequests": {
+      "totalCount": 86179
+    }
+  },
+  {
+    "nameWithOwner": "microsoft/TypeScript",
+    "pullRequests": {
+      "totalCount": 18269
+    }
+  },
+  {
+    "nameWithOwner": "denoland/deno",
+    "pullRequests": {
+      "totalCount": 16108
+    }
+  },
+  {
+    "nameWithOwner": "goldbergyoni/nodebestpractices",
+    "pullRequests": {
+      "totalCount": 927
+    }
+  },
+  {
+    "nameWithOwner": "facebook/create-react-app",
+    "pullRequests": {
+      "totalCount": 3830
+    }
+  },
+  {
+    "nameWithOwner": "godotengine/godot",
+    "pullRequests": {
+      "totalCount": 47219
+    }
+  },
+  {
+    "nameWithOwner": "microsoft/terminal",
+    "pullRequests": {
+      "totalCount": 4775
+    }
+  },
+  {
+    "nameWithOwner": "microsoft/generative-ai-for-beginners",
+    "pullRequests": {
+      "totalCount": 633
+    }
+  },
+  {
+    "nameWithOwner": "rustdesk/rustdesk",
+    "pullRequests": {
+      "totalCount": 4542
+    }
+  },
+  {
+    "nameWithOwner": "deepseek-ai/DeepSeek-V3",
+    "pullRequests": {
+      "totalCount": 122
+    }
+  },
+  {
+    "nameWithOwner": "fatedier/frp",
+    "pullRequests": {
+      "totalCount": 1011
+    }
+  },
+  {
+    "nameWithOwner": "papers-we-love/papers-we-love",
+    "pullRequests": {
+      "totalCount": 520
+    }
+  },
+  {
+    "nameWithOwner": "angular/angular",
+    "pullRequests": {
+      "totalCount": 32673
+    }
+  },
+  {
+    "nameWithOwner": "Hack-with-Github/Awesome-Hacking",
+    "pullRequests": {
+      "totalCount": 110
+    }
+  },
+  {
+    "nameWithOwner": "iptv-org/iptv",
+    "pullRequests": {
+      "totalCount": 7357
+    }
+  },
+  {
+    "nameWithOwner": "shadcn-ui/ui",
+    "pullRequests": {
+      "totalCount": 1959
+    }
+  },
+  {
+    "nameWithOwner": "tauri-apps/tauri",
+    "pullRequests": {
+      "totalCount": 5992
+    }
+  },
+  {
+    "nameWithOwner": "mui/material-ui",
+    "pullRequests": {
+      "totalCount": 25274
+    }
+  },
+  {
+    "nameWithOwner": "ant-design/ant-design",
+    "pullRequests": {
+      "totalCount": 20430
+    }
+  },
+  {
+    "nameWithOwner": "Anduin2017/HowToCook",
+    "pullRequests": {
+      "totalCount": 811
+    }
+  },
+  {
+    "nameWithOwner": "nvbn/thefuck",
+    "pullRequests": {
+      "totalCount": 610
+    }
+  },
+  {
+    "nameWithOwner": "ryanmcdermott/clean-code-javascript",
+    "pullRequests": {
+      "totalCount": 252
+    }
+  },
+  {
+    "nameWithOwner": "pytorch/pytorch",
+    "pullRequests": {
+      "totalCount": 109150
+    }
+  },
+  {
+    "nameWithOwner": "mtdvio/every-programmer-should-know",
+    "pullRequests": {
+      "totalCount": 149
+    }
+  },
+  {
+    "nameWithOwner": "neovim/neovim",
+    "pullRequests": {
+      "totalCount": 21352
+    }
+  },
+  {
+    "nameWithOwner": "iluwatar/java-design-patterns",
+    "pullRequests": {
+      "totalCount": 2290
+    }
+  },
+  {
+    "nameWithOwner": "puppeteer/puppeteer",
+    "pullRequests": {
+      "totalCount": 6859
+    }
+  },
+  {
+    "nameWithOwner": "microsoft/Web-Dev-For-Beginners",
+    "pullRequests": {
+      "totalCount": 981
+    }
+  },
+  {
+    "nameWithOwner": "comfyanonymous/ComfyUI",
+    "pullRequests": {
+      "totalCount": 2162
+    }
+  },
+  {
+    "nameWithOwner": "fastapi/fastapi",
+    "pullRequests": {
+      "totalCount": 4611
+    }
+  },
+  {
+    "nameWithOwner": "tailwindlabs/tailwindcss",
+    "pullRequests": {
+      "totalCount": 3891
+    }
+  },
+  {
+    "nameWithOwner": "supabase/supabase",
+    "pullRequests": {
+      "totalCount": 15835
+    }
+  },
+  {
+    "nameWithOwner": "PanJiaChen/vue-element-admin",
+    "pullRequests": {
+      "totalCount": 484
+    }
+  },
+  {
+    "nameWithOwner": "jaywcjlove/awesome-mac",
+    "pullRequests": {
+      "totalCount": 1116
+    }
+  },
+  {
+    "nameWithOwner": "openai/whisper",
+    "pullRequests": {
+      "totalCount": 229
+    }
+  },
+  {
+    "nameWithOwner": "2dust/v2rayN",
+    "pullRequests": {
+      "totalCount": 520
+    }
+  },
+  {
+    "nameWithOwner": "storybookjs/storybook",
+    "pullRequests": {
+      "totalCount": 14403
+    }
+  },
+  {
+    "nameWithOwner": "ggml-org/llama.cpp",
+    "pullRequests": {
+      "totalCount": 7298
+    }
+  },
+  {
+    "nameWithOwner": "nvm-sh/nvm",
+    "pullRequests": {
+      "totalCount": 1093
+    }
+  },
+  {
+    "nameWithOwner": "florinpop17/app-ideas",
+    "pullRequests": {
+      "totalCount": 368
+    }
+  },
+  {
+    "nameWithOwner": "gin-gonic/gin",
+    "pullRequests": {
+      "totalCount": 1792
+    }
+  },
+  {
+    "nameWithOwner": "bitcoin/bitcoin",
+    "pullRequests": {
+      "totalCount": 22612
+    }
+  },
+  {
+    "nameWithOwner": "ChatGPTNextWeb/NextChat",
+    "pullRequests": {
+      "totalCount": 2517
+    }
+  },
+  {
+    "nameWithOwner": "django/django",
+    "pullRequests": {
+      "totalCount": 19485
+    }
+  },
+  {
+    "nameWithOwner": "opencv/opencv",
+    "pullRequests": {
+      "totalCount": 16231
+    }
+  },
+  {
+    "nameWithOwner": "sveltejs/svelte",
+    "pullRequests": {
+      "totalCount": 7389
+    }
+  },
+  {
+    "nameWithOwner": "gohugoio/hugo",
+    "pullRequests": {
+      "totalCount": 5931
+    }
+  },
+  {
+    "nameWithOwner": "mermaid-js/mermaid",
+    "pullRequests": {
+      "totalCount": 2992
+    }
+  },
+  {
+    "nameWithOwner": "laravel/laravel",
+    "pullRequests": {
+      "totalCount": 4904
+    }
+  },
+  {
+    "nameWithOwner": "gothinkster/realworld",
+    "pullRequests": {
+      "totalCount": 882
+    }
+  },
+  {
+    "nameWithOwner": "animate-css/animate.css",
+    "pullRequests": {
+      "totalCount": 884
+    }
+  },
+  {
+    "nameWithOwner": "home-assistant/core",
+    "pullRequests": {
+      "totalCount": 89131
+    }
+  },
+  {
+    "nameWithOwner": "macrozheng/mall",
+    "pullRequests": {
+      "totalCount": 135
+    }
+  },
+  {
+    "nameWithOwner": "microsoft/markitdown",
+    "pullRequests": {
+      "totalCount": 232
+    }
+  },
+  {
+    "nameWithOwner": "oven-sh/bun",
+    "pullRequests": {
+      "totalCount": 8249
+    }
+  },
+  {
+    "nameWithOwner": "immich-app/immich",
+    "pullRequests": {
+      "totalCount": 8818
+    }
+  },
+  {
+    "nameWithOwner": "3b1b/manim",
+    "pullRequests": {
+      "totalCount": 874
+    }
+  },
+  {
+    "nameWithOwner": "tonsky/FiraCode",
+    "pullRequests": {
+      "totalCount": 193
+    }
+  },
+  {
+    "nameWithOwner": "bregman-arie/devops-exercises",
+    "pullRequests": {
+      "totalCount": 411
+    }
+  },
+  {
+    "nameWithOwner": "google-gemini/gemini-cli",
+    "pullRequests": {
+      "totalCount": 4023
+    }
+  },
+  {
+    "nameWithOwner": "spring-projects/spring-boot",
+    "pullRequests": {
+      "totalCount": 7112
+    }
+  },
+  {
+    "nameWithOwner": "MunGell/awesome-for-beginners",
+    "pullRequests": {
+      "totalCount": 1465
+    }
+  },
+  {
+    "nameWithOwner": "doocs/advanced-java",
+    "pullRequests": {
+      "totalCount": 127
+    }
+  },
+  {
+    "nameWithOwner": "microsoft/playwright",
+    "pullRequests": {
+      "totalCount": 17716
+    }
+  },
+  {
+    "nameWithOwner": "microsoft/ML-For-Beginners",
+    "pullRequests": {
+      "totalCount": 591
+    }
+  },
+  {
+    "nameWithOwner": "clash-verge-rev/clash-verge-rev",
+    "pullRequests": {
+      "totalCount": 575
+    }
+  },
+  {
+    "nameWithOwner": "DopplerHQ/awesome-interview-questions",
+    "pullRequests": {
+      "totalCount": 210
+    }
+  },
+  {
+    "nameWithOwner": "tensorflow/models",
+    "pullRequests": {
+      "totalCount": 3660
+    }
+  },
+  {
+    "nameWithOwner": "ruanyf/weekly",
+    "pullRequests": {
+      "totalCount": 137
+    }
+  },
+  {
+    "nameWithOwner": "syncthing/syncthing",
+    "pullRequests": {
+      "totalCount": 4559
+    }
+  },
+  {
+    "nameWithOwner": "nomic-ai/gpt4all",
+    "pullRequests": {
+      "totalCount": 1152
+    }
+  },
+  {
+    "nameWithOwner": "anuraghazra/github-readme-stats",
+    "pullRequests": {
+      "totalCount": 2704
+    }
+  },
+  {
+    "nameWithOwner": "netdata/netdata",
+    "pullRequests": {
+      "totalCount": 12332
+    }
+  },
+  {
+    "nameWithOwner": "louislam/uptime-kuma",
+    "pullRequests": {
+      "totalCount": 1790
+    }
+  },
+  {
+    "nameWithOwner": "vitejs/vite",
+    "pullRequests": {
+      "totalCount": 7282
+    }
+  },
+  {
+    "nameWithOwner": "FortAwesome/Font-Awesome",
+    "pullRequests": {
+      "totalCount": 676
+    }
+  },
+  {
+    "nameWithOwner": "rasbt/LLMs-from-scratch",
+    "pullRequests": {
+      "totalCount": 503
+    }
+  },
+  {
+    "nameWithOwner": "typicode/json-server",
+    "pullRequests": {
+      "totalCount": 323
+    }
+  },
+  {
+    "nameWithOwner": "elastic/elasticsearch",
+    "pullRequests": {
+      "totalCount": 93780
+    }
+  },
+  {
+    "nameWithOwner": "hoppscotch/hoppscotch",
+    "pullRequests": {
+      "totalCount": 2807
+    }
+  },
+  {
+    "nameWithOwner": "unionlabs/union",
+    "pullRequests": {
+      "totalCount": 3250
+    }
+  },
+  {
+    "nameWithOwner": "junegunn/fzf",
+    "pullRequests": {
+      "totalCount": 1022
+    }
+  },
+  {
+    "nameWithOwner": "coder/code-server",
+    "pullRequests": {
+      "totalCount": 2036
+    }
+  },
+  {
+    "nameWithOwner": "sdmg15/Best-websites-a-programmer-should-visit",
+    "pullRequests": {
+      "totalCount": 968
+    }
+  },
+  {
+    "nameWithOwner": "hacksider/Deep-Live-Cam",
+    "pullRequests": {
+      "totalCount": 220
+    }
+  },
+  {
+    "nameWithOwner": "vuejs/awesome-vue",
+    "pullRequests": {
+      "totalCount": 3948
+    }
+  },
+  {
+    "nameWithOwner": "d2l-ai/d2l-zh",
+    "pullRequests": {
+      "totalCount": 1267
+    }
+  },
+  {
+    "nameWithOwner": "nestjs/nest",
+    "pullRequests": {
+      "totalCount": 9674
+    }
+  },
+  {
+    "nameWithOwner": "punkpeye/awesome-mcp-servers",
+    "pullRequests": {
+      "totalCount": 1149
+    }
+  },
+  {
+    "nameWithOwner": "Shubhamsaboo/awesome-llm-apps",
+    "pullRequests": {
+      "totalCount": 232
+    }
+  },
+  {
+    "nameWithOwner": "thedaviddias/Front-End-Checklist",
+    "pullRequests": {
+      "totalCount": 308
+    }
+  },
+  {
+    "nameWithOwner": "browser-use/browser-use",
+    "pullRequests": {
+      "totalCount": 1839
+    }
+  },
+  {
+    "nameWithOwner": "redis/redis",
+    "pullRequests": {
+      "totalCount": 6676
+    }
+  },
+  {
+    "nameWithOwner": "ventoy/Ventoy",
+    "pullRequests": {
+      "totalCount": 417
+    }
+  },
+  {
+    "nameWithOwner": "abi/screenshot-to-code",
+    "pullRequests": {
+      "totalCount": 101
+    }
+  },
+  {
+    "nameWithOwner": "moby/moby",
+    "pullRequests": {
+      "totalCount": 26622
+    }
+  },
+  {
+    "nameWithOwner": "swisskyrepo/PayloadsAllTheThings",
+    "pullRequests": {
+      "totalCount": 688
+    }
+  },
+  {
+    "nameWithOwner": "pallets/flask",
+    "pullRequests": {
+      "totalCount": 2675
+    }
+  },
+  {
+    "nameWithOwner": "grafana/grafana",
+    "pullRequests": {
+      "totalCount": 67520
+    }
+  },
+  {
+    "nameWithOwner": "modelcontextprotocol/servers",
+    "pullRequests": {
+      "totalCount": 2081
+    }
+  },
+  {
+    "nameWithOwner": "enaqx/awesome-react",
+    "pullRequests": {
+      "totalCount": 1343
+    }
+  },
+  {
+    "nameWithOwner": "tesseract-ocr/tesseract",
+    "pullRequests": {
+      "totalCount": 1645
+    }
+  },
+  {
+    "nameWithOwner": "josephmisiti/awesome-machine-learning",
+    "pullRequests": {
+      "totalCount": 947
+    }
+  },
+  {
+    "nameWithOwner": "Developer-Y/cs-video-courses",
+    "pullRequests": {
+      "totalCount": 289
+    }
+  },
+  {
+    "nameWithOwner": "strapi/strapi",
+    "pullRequests": {
+      "totalCount": 11721
+    }
+  },
+  {
+    "nameWithOwner": "astral-sh/uv",
+    "pullRequests": {
+      "totalCount": 8264
+    }
+  },
+  {
+    "nameWithOwner": "hakimel/reveal.js",
+    "pullRequests": {
+      "totalCount": 1018
+    }
+  },
+  {
+    "nameWithOwner": "sherlock-project/sherlock",
+    "pullRequests": {
+      "totalCount": 1230
+    }
+  },
+  {
+    "nameWithOwner": "python/cpython",
+    "pullRequests": {
+      "totalCount": 63147
+    }
+  },
+  {
+    "nameWithOwner": "binary-husky/gpt_academic",
+    "pullRequests": {
+      "totalCount": 328
+    }
+  },
+  {
+    "nameWithOwner": "protocolbuffers/protobuf",
+    "pullRequests": {
+      "totalCount": 16891
+    }
+  },
+  {
+    "nameWithOwner": "awesomedata/awesome-public-datasets",
+    "pullRequests": {
+      "totalCount": 292
+    }
+  },
+  {
+    "nameWithOwner": "swiftlang/swift",
+    "pullRequests": {
+      "totalCount": 62906
+    }
+  },
+  {
+    "nameWithOwner": "localsend/localsend",
+    "pullRequests": {
+      "totalCount": 770
+    }
+  },
+  {
+    "nameWithOwner": "ocornut/imgui",
+    "pullRequests": {
+      "totalCount": 1424
+    }
+  },
+  {
+    "nameWithOwner": "Stirling-Tools/Stirling-PDF",
+    "pullRequests": {
+      "totalCount": 2928
+    }
+  },
+  {
+    "nameWithOwner": "base/node",
+    "pullRequests": {
+      "totalCount": 304
+    }
+  },
+  {
+    "nameWithOwner": "openai/openai-cookbook",
+    "pullRequests": {
+      "totalCount": 1310
+    }
+  },
+  {
+    "nameWithOwner": "apache/superset",
+    "pullRequests": {
+      "totalCount": 19269
+    }
+  },
+  {
+    "nameWithOwner": "PKUFlyingPig/cs-self-learning",
+    "pullRequests": {
+      "totalCount": 355
+    }
+  },
+  {
+    "nameWithOwner": "expressjs/express",
+    "pullRequests": {
+      "totalCount": 2090
+    }
+  },
+  {
+    "nameWithOwner": "twitter/the-algorithm",
+    "pullRequests": {
+      "totalCount": 363
+    }
+  },
+  {
+    "nameWithOwner": "obsproject/obs-studio",
+    "pullRequests": {
+      "totalCount": 7154
+    }
+  },
+  {
+    "nameWithOwner": "caddyserver/caddy",
+    "pullRequests": {
+      "totalCount": 2609
+    }
+  },
+  {
+    "nameWithOwner": "zed-industries/zed",
+    "pullRequests": {
+      "totalCount": 19864
+    }
+  },
+  {
+    "nameWithOwner": "fffaraz/awesome-cpp",
+    "pullRequests": {
+      "totalCount": 992
+    }
+  },
+  {
+    "nameWithOwner": "lobehub/lobe-chat",
+    "pullRequests": {
+      "totalCount": 3681
+    }
+  }
+]

@@ -1,0 +1,2108 @@
+{
+    "nameWithOwner": "chartjs/Chart.js",
+    "pullRequests": {
+        "totalCount": 3852,
+        "nodes": [
+            {
+                "title": "Added file for Bower package",
+                "number": 19,
+                "state": "MERGED",
+                "url": "https://github.com/chartjs/Chart.js/pull/19",
+                "createdAt": "2013-03-18T16:23:04Z",
+                "mergedAt": "2013-03-18T20:08:02Z",
+                "closedAt": "2013-03-18T20:08:02Z",
+                "author": {
+                    "login": "fizerkhan"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 2
+                },
+                "additions": 11,
+                "deletions": 0,
+                "changedFiles": 1
+            },
+            {
+                "title": "Added Dataset Cut for Line Chart",
+                "number": 22,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/22",
+                "createdAt": "2013-03-19T09:59:23Z",
+                "mergedAt": null,
+                "closedAt": "2014-09-29T08:51:06Z",
+                "author": {
+                    "login": "Nighthawk14"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 1
+                },
+                "additions": 33,
+                "deletions": 2,
+                "changedFiles": 3
+            },
+            {
+                "title": "Fixing bug on minification",
+                "number": 27,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/27",
+                "createdAt": "2013-03-19T18:38:11Z",
+                "mergedAt": null,
+                "closedAt": "2014-08-03T20:38:23Z",
+                "author": {
+                    "login": "samuelclay"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 1
+                },
+                "additions": 23,
+                "deletions": 23,
+                "changedFiles": 1
+            },
+            {
+                "title": "add license text and header",
+                "number": 33,
+                "state": "MERGED",
+                "url": "https://github.com/chartjs/Chart.js/pull/33",
+                "createdAt": "2013-03-20T04:10:35Z",
+                "mergedAt": "2013-03-25T19:03:42Z",
+                "closedAt": "2013-03-25T19:03:42Z",
+                "author": {
+                    "login": "robocoder"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 2
+                },
+                "additions": 16,
+                "deletions": 0,
+                "changedFiles": 2
+            },
+            {
+                "title": "Added basic labels to Pie chart",
+                "number": 35,
+                "state": "MERGED",
+                "url": "https://github.com/chartjs/Chart.js/pull/35",
+                "createdAt": "2013-03-20T08:18:03Z",
+                "mergedAt": "2014-06-30T09:04:05Z",
+                "closedAt": "2014-06-30T09:04:05Z",
+                "author": {
+                    "login": "Regaddi"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 67
+                },
+                "additions": 0,
+                "deletions": 0,
+                "changedFiles": 0
+            },
+            {
+                "title": "Implemented stacked bar chart",
+                "number": 37,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/37",
+                "createdAt": "2013-03-20T14:42:47Z",
+                "mergedAt": null,
+                "closedAt": "2014-07-27T22:32:33Z",
+                "author": {
+                    "login": "bmconklin"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 17
+                },
+                "additions": 304,
+                "deletions": 2,
+                "changedFiles": 2
+            },
+            {
+                "title": "fix issue 29: add missing ctx.rotate() to Radar",
+                "number": 38,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/38",
+                "createdAt": "2013-03-20T15:11:59Z",
+                "mergedAt": null,
+                "closedAt": "2013-03-25T19:38:54Z",
+                "author": {
+                    "login": "reisub-de"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 4
+                },
+                "additions": 1,
+                "deletions": 0,
+                "changedFiles": 1
+            },
+            {
+                "title": "Adding a LICENSE file with copyright attribution and MIT license text",
+                "number": 43,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/43",
+                "createdAt": "2013-03-21T14:58:20Z",
+                "mergedAt": null,
+                "closedAt": "2013-03-21T20:34:56Z",
+                "author": {
+                    "login": "camillem"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 2
+                },
+                "additions": 19,
+                "deletions": 0,
+                "changedFiles": 1
+            },
+            {
+                "title": "datasets not starting at the beginning of a graph",
+                "number": 48,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/48",
+                "createdAt": "2013-03-22T15:06:08Z",
+                "mergedAt": null,
+                "closedAt": "2014-12-29T20:07:16Z",
+                "author": {
+                    "login": "beckmi"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 3
+                },
+                "additions": 11,
+                "deletions": 4,
+                "changedFiles": 1
+            },
+            {
+                "title": "Tooltips",
+                "number": 51,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/51",
+                "createdAt": "2013-03-23T15:25:50Z",
+                "mergedAt": null,
+                "closedAt": "2014-07-01T18:48:12Z",
+                "author": {
+                    "login": "Regaddi"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 109
+                },
+                "additions": 650,
+                "deletions": 148,
+                "changedFiles": 8
+            },
+            {
+                "title": "Fixes #44: Custom scale on line graph doesn't start at origin",
+                "number": 53,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/53",
+                "createdAt": "2013-03-24T17:02:30Z",
+                "mergedAt": null,
+                "closedAt": "2013-04-12T20:23:45Z",
+                "author": {
+                    "login": "ulrichsg"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 3
+                },
+                "additions": 5,
+                "deletions": 4,
+                "changedFiles": 1
+            },
+            {
+                "title": "Fix issue #44 Custom scale on line graph doesn't start at origin (alternate fix)",
+                "number": 55,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/55",
+                "createdAt": "2013-03-25T16:02:24Z",
+                "mergedAt": null,
+                "closedAt": "2013-04-12T20:22:55Z",
+                "author": {
+                    "login": "callado4"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 3
+                },
+                "additions": 53,
+                "deletions": 70,
+                "changedFiles": 2
+            },
+            {
+                "title": "jack",
+                "number": 57,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/57",
+                "createdAt": "2013-03-26T14:43:47Z",
+                "mergedAt": null,
+                "closedAt": "2013-03-26T18:22:21Z",
+                "author": {
+                    "login": "JackLiang"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 1
+                },
+                "additions": 1,
+                "deletions": 0,
+                "changedFiles": 1
+            },
+            {
+                "title": "shorthand data input",
+                "number": 62,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/62",
+                "createdAt": "2013-03-29T13:01:14Z",
+                "mergedAt": null,
+                "closedAt": "2014-12-29T21:03:17Z",
+                "author": {
+                    "login": "girish3"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 2
+                },
+                "additions": 140,
+                "deletions": 50,
+                "changedFiles": 2
+            },
+            {
+                "title": "Allow configuration of min/max steps and values",
+                "number": 69,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/69",
+                "createdAt": "2013-04-03T09:43:36Z",
+                "mergedAt": null,
+                "closedAt": "2014-09-11T15:06:08Z",
+                "author": {
+                    "login": "mkdynamic"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 2
+                },
+                "additions": 4,
+                "deletions": 4,
+                "changedFiles": 1
+            },
+            {
+                "title": "Bar chart y-axis labels were off by 1 position",
+                "number": 71,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/71",
+                "createdAt": "2013-04-05T14:07:42Z",
+                "mergedAt": null,
+                "closedAt": "2013-04-12T20:21:43Z",
+                "author": {
+                    "login": "joeyblake"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 3
+                },
+                "additions": 1,
+                "deletions": 1,
+                "changedFiles": 1
+            },
+            {
+                "title": "Explicit global definition",
+                "number": 75,
+                "state": "MERGED",
+                "url": "https://github.com/chartjs/Chart.js/pull/75",
+                "createdAt": "2013-04-13T08:57:21Z",
+                "mergedAt": "2013-04-15T17:20:28Z",
+                "closedAt": "2013-04-15T17:20:28Z",
+                "author": {
+                    "login": "esamattis"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 1
+                },
+                "additions": 1,
+                "deletions": 1,
+                "changedFiles": 1
+            },
+            {
+                "title": "BarAndLine Chart added",
+                "number": 81,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/81",
+                "createdAt": "2013-04-23T08:20:03Z",
+                "mergedAt": null,
+                "closedAt": "2014-09-09T20:59:20Z",
+                "author": {
+                    "login": "Wimmen"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 1
+                },
+                "additions": 408,
+                "deletions": 87,
+                "changedFiles": 3
+            },
+            {
+                "title": "Allows border-radius on bar charts",
+                "number": 85,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/85",
+                "createdAt": "2013-04-25T06:22:15Z",
+                "mergedAt": null,
+                "closedAt": "2014-12-29T21:07:23Z",
+                "author": {
+                    "login": "jtsternberg"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 5
+                },
+                "additions": 265,
+                "deletions": 233,
+                "changedFiles": 1
+            },
+            {
+                "title": "Added a validateArguments function to throw meaningful error messages and added testing framework.",
+                "number": 91,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/91",
+                "createdAt": "2013-04-30T13:34:55Z",
+                "mergedAt": null,
+                "closedAt": "2014-12-29T21:13:13Z",
+                "author": {
+                    "login": "bittersweetryan"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 2
+                },
+                "additions": 10040,
+                "deletions": 4,
+                "changedFiles": 19
+            },
+            {
+                "title": "Adding config for set the datasetFill X and Y axis",
+                "number": 96,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/96",
+                "createdAt": "2013-05-08T10:45:58Z",
+                "mergedAt": null,
+                "closedAt": "2014-12-29T21:13:09Z",
+                "author": {
+                    "login": "jespino"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 4
+                },
+                "additions": 16,
+                "deletions": 3,
+                "changedFiles": 1
+            },
+            {
+                "title": "Fixes decimal places error on scientific notation",
+                "number": 97,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/97",
+                "createdAt": "2013-05-08T16:47:48Z",
+                "mergedAt": null,
+                "closedAt": "2014-12-29T21:13:04Z",
+                "author": {
+                    "login": "SleeplessByte"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 3
+                },
+                "additions": 18,
+                "deletions": 2,
+                "changedFiles": 1
+            },
+            {
+                "title": "Issue #82",
+                "number": 98,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/98",
+                "createdAt": "2013-05-09T19:17:28Z",
+                "mergedAt": null,
+                "closedAt": "2014-12-29T20:20:19Z",
+                "author": {
+                    "login": "asghar07"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 2
+                },
+                "additions": 10,
+                "deletions": 1,
+                "changedFiles": 2
+            },
+            {
+                "title": "Remove scaleOverride, just override implicitly by passed config values",
+                "number": 112,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/112",
+                "createdAt": "2013-05-23T14:21:43Z",
+                "mergedAt": null,
+                "closedAt": "2014-09-09T16:51:11Z",
+                "author": {
+                    "login": "mmozuras"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 1
+                },
+                "additions": 78,
+                "deletions": 119,
+                "changedFiles": 2
+            },
+            {
+                "title": "Show values in `Doughnut Chart` and `Pie Chart`",
+                "number": 116,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/116",
+                "createdAt": "2013-05-25T19:38:02Z",
+                "mergedAt": null,
+                "closedAt": "2014-08-27T09:21:29Z",
+                "author": {
+                    "login": "fundon"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 13
+                },
+                "additions": 65,
+                "deletions": 8,
+                "changedFiles": 3
+            },
+            {
+                "title": "Show chart title for all charts",
+                "number": 120,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/120",
+                "createdAt": "2013-05-29T15:17:53Z",
+                "mergedAt": null,
+                "closedAt": "2014-12-29T21:12:46Z",
+                "author": {
+                    "login": "mdasberg"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 2
+                },
+                "additions": 3245,
+                "deletions": 2919,
+                "changedFiles": 10
+            },
+            {
+                "title": "Correct default scaleShowLabels value to match js file setting",
+                "number": 125,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/125",
+                "createdAt": "2013-05-31T02:43:03Z",
+                "mergedAt": null,
+                "closedAt": "2013-05-31T02:54:33Z",
+                "author": {
+                    "login": "Ider"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 0
+                },
+                "additions": 2,
+                "deletions": 2,
+                "changedFiles": 1
+            },
+            {
+                "title": "Correct default scaleShowLabels value in document",
+                "number": 126,
+                "state": "MERGED",
+                "url": "https://github.com/chartjs/Chart.js/pull/126",
+                "createdAt": "2013-05-31T03:32:42Z",
+                "mergedAt": "2013-06-05T22:16:04Z",
+                "closedAt": "2013-06-05T22:16:04Z",
+                "author": {
+                    "login": "Ider"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 1
+                },
+                "additions": 2,
+                "deletions": 2,
+                "changedFiles": 1
+            },
+            {
+                "title": "Line Point Hover Implementation, Styling and JavaScript Events",
+                "number": 137,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/137",
+                "createdAt": "2013-06-06T20:02:35Z",
+                "mergedAt": null,
+                "closedAt": "2014-12-29T21:12:40Z",
+                "author": {
+                    "login": "sgarbesi"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 4
+                },
+                "additions": 132,
+                "deletions": 11,
+                "changedFiles": 1
+            },
+            {
+                "title": "Support for multi colored bars in bar graphs",
+                "number": 138,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/138",
+                "createdAt": "2013-06-12T16:18:32Z",
+                "mergedAt": null,
+                "closedAt": "2013-09-15T07:26:07Z",
+                "author": {
+                    "login": "knadh"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 16
+                },
+                "additions": 13,
+                "deletions": 7,
+                "changedFiles": 3
+            },
+            {
+                "title": "spelling changed for competition",
+                "number": 139,
+                "state": "MERGED",
+                "url": "https://github.com/chartjs/Chart.js/pull/139",
+                "createdAt": "2013-06-13T03:18:22Z",
+                "mergedAt": "2013-06-14T23:21:53Z",
+                "closedAt": "2013-06-14T23:21:53Z",
+                "author": {
+                    "login": "ilyakatz"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 0
+                },
+                "additions": 2,
+                "deletions": 2,
+                "changedFiles": 1
+            },
+            {
+                "title": "Automatically size charts based upon the canvas size.",
+                "number": 142,
+                "state": "MERGED",
+                "url": "https://github.com/chartjs/Chart.js/pull/142",
+                "createdAt": "2013-06-19T05:03:55Z",
+                "mergedAt": "2015-01-26T23:55:49Z",
+                "closedAt": "2015-01-26T23:55:49Z",
+                "author": {
+                    "login": "JonRowe"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 9
+                },
+                "additions": 19,
+                "deletions": 2,
+                "changedFiles": 1
+            },
+            {
+                "title": "Fix for issue#149",
+                "number": 150,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/150",
+                "createdAt": "2013-06-24T02:05:30Z",
+                "mergedAt": null,
+                "closedAt": "2014-12-29T21:12:06Z",
+                "author": {
+                    "login": "raunaqgupta"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 2
+                },
+                "additions": 3,
+                "deletions": 2,
+                "changedFiles": 1
+            },
+            {
+                "title": "Added line chart property \"onlyHorizontalGridLines\" for horizontal only grid lines",
+                "number": 151,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/151",
+                "createdAt": "2013-06-24T02:34:49Z",
+                "mergedAt": null,
+                "closedAt": "2014-12-29T21:12:01Z",
+                "author": {
+                    "login": "raunaqgupta"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 4
+                },
+                "additions": 24,
+                "deletions": 21,
+                "changedFiles": 1
+            },
+            {
+                "title": "Added labels to pie charts",
+                "number": 158,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/158",
+                "createdAt": "2013-07-02T04:08:03Z",
+                "mergedAt": null,
+                "closedAt": "2014-09-09T17:39:54Z",
+                "author": {
+                    "login": "yDgunz"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 5
+                },
+                "additions": 13,
+                "deletions": 1,
+                "changedFiles": 1
+            },
+            {
+                "title": "thousand separator",
+                "number": 160,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/160",
+                "createdAt": "2013-07-03T17:03:16Z",
+                "mergedAt": null,
+                "closedAt": "2014-12-29T21:11:56Z",
+                "author": {
+                    "login": "Wikunia"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 18
+                },
+                "additions": 7,
+                "deletions": 3,
+                "changedFiles": 2
+            },
+            {
+                "title": "Radar new feature: fillColor depending on the area size",
+                "number": 162,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/162",
+                "createdAt": "2013-07-04T10:42:41Z",
+                "mergedAt": null,
+                "closedAt": "2014-09-09T16:26:59Z",
+                "author": {
+                    "login": "plus-"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 2
+                },
+                "additions": 32,
+                "deletions": 0,
+                "changedFiles": 1
+            },
+            {
+                "title": "Correct x axis interval",
+                "number": 163,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/163",
+                "createdAt": "2013-07-05T09:06:38Z",
+                "mergedAt": null,
+                "closedAt": "2014-09-26T17:07:49Z",
+                "author": {
+                    "login": "Wikunia"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 1
+                },
+                "additions": 437,
+                "deletions": 188,
+                "changedFiles": 4
+            },
+            {
+                "title": "Display values in Line charts",
+                "number": 164,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/164",
+                "createdAt": "2013-07-05T14:26:33Z",
+                "mergedAt": null,
+                "closedAt": "2014-12-29T21:11:45Z",
+                "author": {
+                    "login": "mxgnr"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 5
+                },
+                "additions": 17,
+                "deletions": 0,
+                "changedFiles": 1
+            },
+            {
+                "title": "Adds default fill, stroke & point colors if none are provided.",
+                "number": 165,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/165",
+                "createdAt": "2013-07-08T07:51:34Z",
+                "mergedAt": null,
+                "closedAt": "2014-12-29T21:11:40Z",
+                "author": {
+                    "login": "p4ul"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 7
+                },
+                "additions": 52,
+                "deletions": 13,
+                "changedFiles": 1
+            },
+            {
+                "title": "Allow re-creating charts on existing canvas that has been scaled before on retina display",
+                "number": 166,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/166",
+                "createdAt": "2013-07-09T09:41:15Z",
+                "mergedAt": null,
+                "closedAt": "2014-12-29T21:11:34Z",
+                "author": {
+                    "login": "kobim"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 3
+                },
+                "additions": 5,
+                "deletions": 3,
+                "changedFiles": 1
+            },
+            {
+                "title": "[Bars] Support for stacking datasets",
+                "number": 168,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/168",
+                "createdAt": "2013-07-09T18:05:12Z",
+                "mergedAt": null,
+                "closedAt": "2014-09-09T16:53:23Z",
+                "author": {
+                    "login": "jairtrejo"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 7
+                },
+                "additions": 63,
+                "deletions": 24,
+                "changedFiles": 2
+            },
+            {
+                "title": "The datasetStroke option is respected for Line",
+                "number": 169,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/169",
+                "createdAt": "2013-07-10T02:06:23Z",
+                "mergedAt": null,
+                "closedAt": "2014-12-29T21:11:28Z",
+                "author": {
+                    "login": "oatkiller"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 2
+                },
+                "additions": 16,
+                "deletions": 11,
+                "changedFiles": 1
+            },
+            {
+                "title": "#73 Create horizontal bar charts",
+                "number": 172,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/172",
+                "createdAt": "2013-07-10T19:29:36Z",
+                "mergedAt": null,
+                "closedAt": "2014-12-29T20:53:44Z",
+                "author": {
+                    "login": "pksjce"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 10
+                },
+                "additions": 203,
+                "deletions": 8,
+                "changedFiles": 3
+            },
+            {
+                "title": "possibility to have a logarithmic y-Axis scale ",
+                "number": 173,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/173",
+                "createdAt": "2013-07-11T10:04:02Z",
+                "mergedAt": null,
+                "closedAt": "2014-08-20T09:31:33Z",
+                "author": {
+                    "login": "Wikunia"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 7
+                },
+                "additions": 150,
+                "deletions": 76,
+                "changedFiles": 3
+            },
+            {
+                "title": "Added a Treemap visualization",
+                "number": 174,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/174",
+                "createdAt": "2013-07-11T17:20:29Z",
+                "mergedAt": null,
+                "closedAt": "2014-12-29T21:11:24Z",
+                "author": {
+                    "login": "fxcardi"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 4
+                },
+                "additions": 143,
+                "deletions": 0,
+                "changedFiles": 1
+            },
+            {
+                "title": "Max line radar",
+                "number": 175,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/175",
+                "createdAt": "2013-07-11T20:09:36Z",
+                "mergedAt": null,
+                "closedAt": "2014-09-09T22:42:18Z",
+                "author": {
+                    "login": "parkerbossier"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 1
+                },
+                "additions": 483,
+                "deletions": 223,
+                "changedFiles": 2
+            },
+            {
+                "title": "added bounded bar graph (box)",
+                "number": 176,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/176",
+                "createdAt": "2013-07-11T20:14:57Z",
+                "mergedAt": null,
+                "closedAt": "2014-09-09T22:41:58Z",
+                "author": {
+                    "login": "parkerbossier"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 1
+                },
+                "additions": 467,
+                "deletions": 220,
+                "changedFiles": 2
+            },
+            {
+                "title": "Add legend for line charts",
+                "number": 177,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/177",
+                "createdAt": "2013-07-11T20:19:57Z",
+                "mergedAt": null,
+                "closedAt": "2014-07-24T09:20:23Z",
+                "author": {
+                    "login": "ngallagher87"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 16
+                },
+                "additions": 77,
+                "deletions": 52,
+                "changedFiles": 5
+            },
+            {
+                "title": "changes to Line chart; two new charts",
+                "number": 178,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/178",
+                "createdAt": "2013-07-11T20:31:51Z",
+                "mergedAt": null,
+                "closedAt": "2014-12-29T20:51:05Z",
+                "author": {
+                    "login": "tpinto"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 6
+                },
+                "additions": 245,
+                "deletions": 1,
+                "changedFiles": 1
+            },
+            {
+                "title": "Correct label position #179",
+                "number": 180,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/180",
+                "createdAt": "2013-07-13T17:47:00Z",
+                "mergedAt": null,
+                "closedAt": "2014-09-26T17:06:43Z",
+                "author": {
+                    "login": "Wikunia"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 1
+                },
+                "additions": 24,
+                "deletions": 6,
+                "changedFiles": 1
+            },
+            {
+                "title": "Another visualization for negative values (bar)",
+                "number": 183,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/183",
+                "createdAt": "2013-07-18T12:37:15Z",
+                "mergedAt": null,
+                "closedAt": "2014-09-26T17:06:17Z",
+                "author": {
+                    "login": "Wikunia"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 2
+                },
+                "additions": 42,
+                "deletions": 6,
+                "changedFiles": 2
+            },
+            {
+                "title": "Adds (minimal) support for colors per bar",
+                "number": 202,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/202",
+                "createdAt": "2013-08-07T10:52:30Z",
+                "mergedAt": null,
+                "closedAt": "2013-08-16T06:08:08Z",
+                "author": {
+                    "login": "martijndeb"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 0
+                },
+                "additions": 2,
+                "deletions": 1,
+                "changedFiles": 1
+            },
+            {
+                "title": "Add onAnimationProgress callback function",
+                "number": 211,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/211",
+                "createdAt": "2013-08-22T05:39:11Z",
+                "mergedAt": null,
+                "closedAt": "2014-09-10T15:22:31Z",
+                "author": {
+                    "login": "okcoker"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 3
+                },
+                "additions": 1401,
+                "deletions": 1398,
+                "changedFiles": 1
+            },
+            {
+                "title": "Changed component.json to bower.json",
+                "number": 212,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/212",
+                "createdAt": "2013-08-22T09:54:05Z",
+                "mergedAt": null,
+                "closedAt": "2014-12-29T20:55:01Z",
+                "author": {
+                    "login": "steffenmllr"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 6
+                },
+                "additions": 0,
+                "deletions": 0,
+                "changedFiles": 1
+            },
+            {
+                "title": "Double y axis",
+                "number": 220,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/220",
+                "createdAt": "2013-09-07T16:07:58Z",
+                "mergedAt": null,
+                "closedAt": "2014-09-26T17:05:51Z",
+                "author": {
+                    "login": "Wikunia"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 1
+                },
+                "additions": 542,
+                "deletions": 77,
+                "changedFiles": 4
+            },
+            {
+                "title": "Tooltips",
+                "number": 223,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/223",
+                "createdAt": "2013-09-09T21:16:49Z",
+                "mergedAt": null,
+                "closedAt": "2013-09-09T21:17:16Z",
+                "author": {
+                    "login": "tylertreat"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 1
+                },
+                "additions": 645,
+                "deletions": 148,
+                "changedFiles": 7
+            },
+            {
+                "title": "Feature: multicolor bar charts",
+                "number": 226,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/226",
+                "createdAt": "2013-09-13T10:57:02Z",
+                "mergedAt": null,
+                "closedAt": "2014-12-29T21:11:20Z",
+                "author": {
+                    "login": "caphun"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 5
+                },
+                "additions": 18,
+                "deletions": 9,
+                "changedFiles": 3
+            },
+            {
+                "title": "Ref #228",
+                "number": 229,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/229",
+                "createdAt": "2013-09-26T06:00:42Z",
+                "mergedAt": null,
+                "closedAt": "2014-12-29T21:11:14Z",
+                "author": {
+                    "login": "sukhpalsingh"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 3
+                },
+                "additions": 18,
+                "deletions": 4,
+                "changedFiles": 1
+            },
+            {
+                "title": "If animation is disabled, draw immediately",
+                "number": 239,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/239",
+                "createdAt": "2013-10-11T09:22:36Z",
+                "mergedAt": null,
+                "closedAt": "2014-12-29T21:11:07Z",
+                "author": {
+                    "login": "drpepper"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 2
+                },
+                "additions": 4,
+                "deletions": 39,
+                "changedFiles": 2
+            },
+            {
+                "title": "Fix typo in line chart section",
+                "number": 249,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/249",
+                "createdAt": "2013-10-27T22:44:17Z",
+                "mergedAt": null,
+                "closedAt": "2014-12-29T20:24:19Z",
+                "author": {
+                    "login": "ryanponce"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 1
+                },
+                "additions": 1,
+                "deletions": 1,
+                "changedFiles": 1
+            },
+            {
+                "title": "Update Chart.js",
+                "number": 255,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/255",
+                "createdAt": "2013-11-05T09:09:51Z",
+                "mergedAt": null,
+                "closedAt": "2014-12-29T20:54:35Z",
+                "author": {
+                    "login": "jakabfia"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 3
+                },
+                "additions": 1,
+                "deletions": 1,
+                "changedFiles": 1
+            },
+            {
+                "title": "Added support for bar labels in bar chart",
+                "number": 259,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/259",
+                "createdAt": "2013-11-12T19:38:50Z",
+                "mergedAt": null,
+                "closedAt": "2014-12-29T21:11:03Z",
+                "author": {
+                    "login": "kshyju"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 2
+                },
+                "additions": 75,
+                "deletions": 60,
+                "changedFiles": 4
+            },
+            {
+                "title": "Added support for data labels in line chart",
+                "number": 262,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/262",
+                "createdAt": "2013-11-19T06:34:54Z",
+                "mergedAt": null,
+                "closedAt": "2014-09-10T06:44:12Z",
+                "author": {
+                    "login": "talk2cerlin"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 11
+                },
+                "additions": 17,
+                "deletions": 0,
+                "changedFiles": 1
+            },
+            {
+                "title": "make each module to each file and add grunt flow for packaging Chart",
+                "number": 266,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/266",
+                "createdAt": "2013-11-27T04:35:12Z",
+                "mergedAt": null,
+                "closedAt": "2014-12-29T21:10:56Z",
+                "author": {
+                    "login": "morlay"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 3
+                },
+                "additions": 2438,
+                "deletions": 7866,
+                "changedFiles": 44
+            },
+            {
+                "title": "[line] Pass the canvas object to the function onAnimationComplete",
+                "number": 267,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/267",
+                "createdAt": "2013-11-27T09:03:03Z",
+                "mergedAt": null,
+                "closedAt": "2014-12-29T21:10:51Z",
+                "author": {
+                    "login": "GabrielDelepine"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 2
+                },
+                "additions": 1,
+                "deletions": 1,
+                "changedFiles": 1
+            },
+            {
+                "title": "Negative values line",
+                "number": 272,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/272",
+                "createdAt": "2013-12-15T17:29:07Z",
+                "mergedAt": null,
+                "closedAt": "2014-12-29T20:29:45Z",
+                "author": {
+                    "login": "Wikunia"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 2
+                },
+                "additions": 12,
+                "deletions": 7,
+                "changedFiles": 2
+            },
+            {
+                "title": "Update polar area chart to allow variable arc widths ",
+                "number": 276,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/276",
+                "createdAt": "2013-12-21T03:20:15Z",
+                "mergedAt": null,
+                "closedAt": "2014-12-29T21:10:47Z",
+                "author": {
+                    "login": "sheavner"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 2
+                },
+                "additions": 74,
+                "deletions": 4,
+                "changedFiles": 2
+            },
+            {
+                "title": "277: Line chart does not draw constant value",
+                "number": 282,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/282",
+                "createdAt": "2013-12-25T14:26:25Z",
+                "mergedAt": null,
+                "closedAt": "2014-12-29T21:10:42Z",
+                "author": {
+                    "login": "antzhdanov"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 2
+                },
+                "additions": 23,
+                "deletions": 28,
+                "changedFiles": 1
+            },
+            {
+                "title": "Makes highlighting single bars possible",
+                "number": 292,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/292",
+                "createdAt": "2014-01-16T15:02:40Z",
+                "mergedAt": null,
+                "closedAt": "2014-12-29T21:10:36Z",
+                "author": {
+                    "login": "chbach"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 2
+                },
+                "additions": 56,
+                "deletions": 4,
+                "changedFiles": 2
+            },
+            {
+                "title": "Fixes #39 - infinite loop for small datasets when using Barchart",
+                "number": 293,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/293",
+                "createdAt": "2014-01-16T22:22:19Z",
+                "mergedAt": null,
+                "closedAt": "2014-12-29T20:28:44Z",
+                "author": {
+                    "login": "koleksiuk"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 4
+                },
+                "additions": 2,
+                "deletions": 0,
+                "changedFiles": 1
+            },
+            {
+                "title": "Adding cumulativeAngle to the Pie and Doughnut graph default options",
+                "number": 298,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/298",
+                "createdAt": "2014-01-27T15:55:44Z",
+                "mergedAt": null,
+                "closedAt": "2014-12-29T21:10:29Z",
+                "author": {
+                    "login": "rbichon"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 2
+                },
+                "additions": 26,
+                "deletions": 0,
+                "changedFiles": 2
+            },
+            {
+                "title": "bar chart with a single datapoint is shown as empty.",
+                "number": 301,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/301",
+                "createdAt": "2014-02-01T06:24:45Z",
+                "mergedAt": null,
+                "closedAt": "2014-12-29T20:25:04Z",
+                "author": {
+                    "login": "quicken"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 1
+                },
+                "additions": 8,
+                "deletions": 2,
+                "changedFiles": 2
+            },
+            {
+                "title": "Option added to allow rounding Y axis and a minimum Y scale",
+                "number": 302,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/302",
+                "createdAt": "2014-02-04T17:07:15Z",
+                "mergedAt": null,
+                "closedAt": "2014-04-22T14:44:55Z",
+                "author": {
+                    "login": "linagee"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 1
+                },
+                "additions": 55,
+                "deletions": 11,
+                "changedFiles": 1
+            },
+            {
+                "title": "Update LICENSE.md",
+                "number": 312,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/312",
+                "createdAt": "2014-02-21T02:15:33Z",
+                "mergedAt": null,
+                "closedAt": "2014-09-09T17:23:57Z",
+                "author": {
+                    "login": "PatrickJS"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 1
+                },
+                "additions": 1,
+                "deletions": 1,
+                "changedFiles": 1
+            },
+            {
+                "title": "Update copyright year in license to 2014",
+                "number": 331,
+                "state": "MERGED",
+                "url": "https://github.com/chartjs/Chart.js/pull/331",
+                "createdAt": "2014-03-09T23:19:26Z",
+                "mergedAt": "2014-07-27T22:27:32Z",
+                "closedAt": "2014-07-27T22:27:32Z",
+                "author": {
+                    "login": "kara"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 0
+                },
+                "additions": 1,
+                "deletions": 1,
+                "changedFiles": 1
+            },
+            {
+                "title": "Fix for all zero values in Pie chart data",
+                "number": 333,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/333",
+                "createdAt": "2014-03-18T16:52:54Z",
+                "mergedAt": null,
+                "closedAt": "2014-12-29T21:10:25Z",
+                "author": {
+                    "login": "douglas-vaz"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 2
+                },
+                "additions": 11,
+                "deletions": 1,
+                "changedFiles": 1
+            },
+            {
+                "title": "Added labels to pie and doughnut charts.",
+                "number": 334,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/334",
+                "createdAt": "2014-03-19T21:30:57Z",
+                "mergedAt": null,
+                "closedAt": "2014-12-29T21:10:21Z",
+                "author": {
+                    "login": "Ferguzz"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 3
+                },
+                "additions": 341,
+                "deletions": 136,
+                "changedFiles": 4
+            },
+            {
+                "title": "Alternative radar chart scale style",
+                "number": 335,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/335",
+                "createdAt": "2014-03-20T19:05:28Z",
+                "mergedAt": null,
+                "closedAt": "2014-09-09T22:42:36Z",
+                "author": {
+                    "login": "jimleuk"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 1
+                },
+                "additions": 14,
+                "deletions": 6,
+                "changedFiles": 1
+            },
+            {
+                "title": "Fix outdated copyright year (update to 2014)",
+                "number": 336,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/336",
+                "createdAt": "2014-03-25T23:54:45Z",
+                "mergedAt": null,
+                "closedAt": "2014-12-29T20:24:59Z",
+                "author": {
+                    "login": "rwholmes"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 1
+                },
+                "additions": 1,
+                "deletions": 1,
+                "changedFiles": 1
+            },
+            {
+                "title": "Add simple error bars to the line graphs",
+                "number": 343,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/343",
+                "createdAt": "2014-03-29T15:14:58Z",
+                "mergedAt": null,
+                "closedAt": "2014-12-29T21:10:15Z",
+                "author": {
+                    "login": "hiniko"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 2
+                },
+                "additions": 49,
+                "deletions": 0,
+                "changedFiles": 2
+            },
+            {
+                "title": "Chartnew js",
+                "number": 349,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/349",
+                "createdAt": "2014-04-11T11:50:08Z",
+                "mergedAt": null,
+                "closedAt": "2014-04-11T11:52:11Z",
+                "author": {
+                    "login": "karlhorky"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 0
+                },
+                "additions": 3369,
+                "deletions": 608,
+                "changedFiles": 3
+            },
+            {
+                "title": "Line pointDotStrokeWidth default is 2 not 1",
+                "number": 352,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/352",
+                "createdAt": "2014-04-16T14:50:31Z",
+                "mergedAt": null,
+                "closedAt": "2014-12-29T21:10:10Z",
+                "author": {
+                    "login": "aderowbotham"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 2
+                },
+                "additions": 1,
+                "deletions": 1,
+                "changedFiles": 1
+            },
+            {
+                "title": "New chart-type: Windrose",
+                "number": 359,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/359",
+                "createdAt": "2014-05-06T10:57:30Z",
+                "mergedAt": null,
+                "closedAt": "2014-07-27T22:31:08Z",
+                "author": {
+                    "login": "dforstner"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 3
+                },
+                "additions": 1163,
+                "deletions": 396,
+                "changedFiles": 14
+            },
+            {
+                "title": "IE8 documentation update",
+                "number": 360,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/360",
+                "createdAt": "2014-05-09T10:47:18Z",
+                "mergedAt": null,
+                "closedAt": "2014-12-29T21:09:56Z",
+                "author": {
+                    "login": "danielhusar"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 3
+                },
+                "additions": 377,
+                "deletions": 334,
+                "changedFiles": 13
+            },
+            {
+                "title": "Added option to show values above Bars",
+                "number": 361,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/361",
+                "createdAt": "2014-05-09T18:47:00Z",
+                "mergedAt": null,
+                "closedAt": "2014-12-29T21:09:48Z",
+                "author": {
+                    "login": "kerbasaurus"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 2
+                },
+                "additions": 1763,
+                "deletions": 1389,
+                "changedFiles": 1
+            },
+            {
+                "title": "IE8 documentation update",
+                "number": 374,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/374",
+                "createdAt": "2014-05-26T18:42:45Z",
+                "mergedAt": null,
+                "closedAt": "2014-12-29T21:09:43Z",
+                "author": {
+                    "login": "danielhusar"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 1
+                },
+                "additions": 27,
+                "deletions": 3,
+                "changedFiles": 4
+            },
+            {
+                "title": "Missing semicolon",
+                "number": 377,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/377",
+                "createdAt": "2014-06-06T19:50:16Z",
+                "mergedAt": null,
+                "closedAt": "2014-08-17T22:50:17Z",
+                "author": {
+                    "login": "doubleo2"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 1
+                },
+                "additions": 1,
+                "deletions": 3,
+                "changedFiles": 1
+            },
+            {
+                "title": "Version 1.0.0-beta release",
+                "number": 388,
+                "state": "MERGED",
+                "url": "https://github.com/chartjs/Chart.js/pull/388",
+                "createdAt": "2014-06-29T18:17:54Z",
+                "mergedAt": "2014-06-29T18:18:23Z",
+                "closedAt": "2014-06-29T18:18:23Z",
+                "author": {
+                    "login": "nnnick"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 3
+                },
+                "additions": 8045,
+                "deletions": 7986,
+                "changedFiles": 44
+            },
+            {
+                "title": "Make javascript JavaScript and Github GitHub",
+                "number": 392,
+                "state": "MERGED",
+                "url": "https://github.com/chartjs/Chart.js/pull/392",
+                "createdAt": "2014-06-30T10:50:51Z",
+                "mergedAt": "2014-06-30T21:02:33Z",
+                "closedAt": "2014-06-30T21:02:33Z",
+                "author": {
+                    "login": "jbrooksuk"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 1
+                },
+                "additions": 4,
+                "deletions": 4,
+                "changedFiles": 3
+            },
+            {
+                "title": "save and restore context for Tooltip drawing",
+                "number": 400,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/400",
+                "createdAt": "2014-06-30T17:05:27Z",
+                "mergedAt": null,
+                "closedAt": "2014-07-01T11:51:23Z",
+                "author": {
+                    "login": "3dd13"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 2
+                },
+                "additions": 4,
+                "deletions": 1,
+                "changedFiles": 1
+            },
+            {
+                "title": "Fix option for pointDot not being obeyed",
+                "number": 402,
+                "state": "MERGED",
+                "url": "https://github.com/chartjs/Chart.js/pull/402",
+                "createdAt": "2014-06-30T20:55:22Z",
+                "mergedAt": "2014-06-30T21:12:27Z",
+                "closedAt": "2014-06-30T21:12:27Z",
+                "author": {
+                    "login": "nnnick"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 0
+                },
+                "additions": 32,
+                "deletions": 24,
+                "changedFiles": 5
+            },
+            {
+                "title": "Renamed README.md and require a demo link for changes & new chart types",
+                "number": 404,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/404",
+                "createdAt": "2014-07-01T13:21:09Z",
+                "mergedAt": null,
+                "closedAt": "2014-07-02T20:34:49Z",
+                "author": {
+                    "login": "jbrooksuk"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 3
+                },
+                "additions": 2,
+                "deletions": 1,
+                "changedFiles": 1
+            },
+            {
+                "title": "Update chart.min.js fixed a bug",
+                "number": 405,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/405",
+                "createdAt": "2014-07-01T13:52:02Z",
+                "mergedAt": null,
+                "closedAt": "2014-07-02T20:06:57Z",
+                "author": {
+                    "login": "banmedo"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 3
+                },
+                "additions": 1,
+                "deletions": 1,
+                "changedFiles": 1
+            },
+            {
+                "title": "Add support for CommonJS module definition",
+                "number": 409,
+                "state": "MERGED",
+                "url": "https://github.com/chartjs/Chart.js/pull/409",
+                "createdAt": "2014-07-01T21:44:25Z",
+                "mergedAt": "2014-07-02T20:36:17Z",
+                "closedAt": "2014-07-02T20:36:17Z",
+                "author": {
+                    "login": "BrettBukowski"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 1
+                },
+                "additions": 5,
+                "deletions": 1,
+                "changedFiles": 3
+            },
+            {
+                "title": "Prevent spare datasets from breaking MultiTooltips",
+                "number": 413,
+                "state": "MERGED",
+                "url": "https://github.com/chartjs/Chart.js/pull/413",
+                "createdAt": "2014-07-02T20:29:41Z",
+                "mergedAt": "2014-07-02T20:36:28Z",
+                "closedAt": "2014-07-02T20:36:28Z",
+                "author": {
+                    "login": "nnnick"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 0
+                },
+                "additions": 3,
+                "deletions": 1,
+                "changedFiles": 1
+            },
+            {
+                "title": "Add datasetLabel to elements for tooltip templates",
+                "number": 414,
+                "state": "MERGED",
+                "url": "https://github.com/chartjs/Chart.js/pull/414",
+                "createdAt": "2014-07-02T20:31:30Z",
+                "mergedAt": "2014-07-02T20:36:39Z",
+                "closedAt": "2014-07-02T20:36:39Z",
+                "author": {
+                    "login": "nnnick"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 7
+                },
+                "additions": 3,
+                "deletions": 2,
+                "changedFiles": 3
+            },
+            {
+                "title": "Reflow the Radar before updating to update scale",
+                "number": 415,
+                "state": "MERGED",
+                "url": "https://github.com/chartjs/Chart.js/pull/415",
+                "createdAt": "2014-07-02T20:35:29Z",
+                "mergedAt": "2014-07-02T20:36:51Z",
+                "closedAt": "2014-07-02T20:36:51Z",
+                "author": {
+                    "login": "nnnick"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 0
+                },
+                "additions": 1,
+                "deletions": 0,
+                "changedFiles": 1
+            },
+            {
+                "title": "Fixed line charts fill with negative values",
+                "number": 416,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/416",
+                "createdAt": "2014-07-03T00:47:28Z",
+                "mergedAt": null,
+                "closedAt": "2014-12-29T21:09:37Z",
+                "author": {
+                    "login": "caio-pamplona"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 5
+                },
+                "additions": 8,
+                "deletions": 2,
+                "changedFiles": 1
+            },
+            {
+                "title": "Bugfix - bezierCurve calculations silently fails for datasets with 1 point only.",
+                "number": 425,
+                "state": "CLOSED",
+                "url": "https://github.com/chartjs/Chart.js/pull/425",
+                "createdAt": "2014-07-06T22:23:25Z",
+                "mergedAt": null,
+                "closedAt": "2014-07-09T12:47:50Z",
+                "author": {
+                    "login": "Miosss"
+                },
+                "reviews": {
+                    "totalCount": 0
+                },
+                "comments": {
+                    "totalCount": 1
+                },
+                "additions": 17,
+                "deletions": 13,
+                "changedFiles": 2
+            }
+        ]
+    }
+}

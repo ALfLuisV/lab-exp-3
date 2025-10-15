@@ -44,7 +44,7 @@ REPO_PR_DETAILS_QUERY = """
 query GetRepositoryPullRequestDetails($owner: String!, $name: String!) {
     repository(owner: $owner, name: $name) {
         nameWithOwner
-        pullRequests(states: [MERGED, CLOSED], first: 100) {
+        pullRequests(states: [MERGED, CLOSED], first: 200) {
             totalCount
             nodes {
                 ... on PullRequest {
@@ -61,6 +61,28 @@ query GetRepositoryPullRequestDetails($owner: String!, $name: String!) {
 }
 """
 
+
+REPO_PR_DETAILS_QUERY2 = """
+query SearchPullRequestsWithReviews($searchQuery: String!) {
+  search(query: $searchQuery, type: ISSUE, first: 100) {
+    issueCount
+    nodes {
+      ... on PullRequest {
+        title
+        url
+        state
+        createdAt
+        mergedAt
+        # Adicionado para você poder verificar a contagem de revisões
+        reviews(first: 1) {
+          totalCount
+        }
+      }
+    }
+  }
+}
+"""
+
 def run_graphql_query(query, variables=None):
     """Função genérica para executar qualquer query GraphQL."""
     data = {'query': query, 'variables': variables}
@@ -72,6 +94,22 @@ def run_graphql_query(query, variables=None):
         print(f"Erro na requisição: Status Code {response.status_code}")
         print(response.text)
         return None
+    
+
+def run_query_with_retry(query, variables, retry_delay_seconds=10):
+    """
+    Executa uma query GraphQL, com retentativas infinitas em caso de erro de rede ou servidor (como 502).
+    """
+    while True:
+        try:
+            # Tenta executar a query original
+            result = run_graphql_query(query, variables)
+            return result
+        except requests.exceptions.RequestException as e:
+            # Captura qualquer exceção da biblioteca requests (incluindo timeouts, erros de conexão e erros HTTP como 502)
+            print(f"\n⚠️ Erro de comunicação com a API: {e}. Tentando novamente em {retry_delay_seconds} segundos...")
+            time.sleep(retry_delay_seconds)
+
 
 def fetch_process_and_filter():
     """Busca repositórios em lotes, processa e filtra cada lote."""
@@ -88,6 +126,7 @@ def fetch_process_and_filter():
         # 1. Executa a primeira query para buscar o lote
         variables = {"cursor": cursor}
         result = run_graphql_query(TOP_REPOS_QUERY, variables)
+        
 
         if not result or 'data' not in result or not result['data']['search']['nodes']:
             print("Não foi possível buscar mais repositórios ou atingiu o final da lista.")
@@ -107,23 +146,35 @@ def fetch_process_and_filter():
             if repos_checked_count >= MAX_REPOS_TO_CHECK:
                 break
                 
-            owner, name = full_name.split('/')
-            
-            # Executa a segunda query para obter detalhes dos PRs
-            pr_details_result = run_graphql_query(REPO_PR_DETAILS_QUERY, {"owner": owner, "name": name})
+            # A query de busca precisa de uma string formatada, não de owner/name separados
+            search_query_string = f"repo:{full_name} is:pr is:closed"
+
+            print(f"Verificando repositório: {full_name}...")
+
+            # A ÚNICA MUDANÇA REAL NO SEU LOOP É ESTA LINHA:
+            # Trocamos `run_graphql_query` por `run_query_with_retry`
+            pr_details_result = run_query_with_retry(
+                REPO_PR_DETAILS_QUERY2, 
+                {"searchQuery": search_query_string}
+            )
             
             repos_checked_count += 1
             
-            if pr_details_result and 'data' in pr_details_result and pr_details_result['data']['repository']:
-                repo_data = pr_details_result['data']['repository']
-                pr_count = repo_data['pullRequests']['totalCount']
+            # Adaptei a lógica para a query de busca (search) que retorna `issueCount`
+            if pr_details_result and 'data' in pr_details_result and pr_details_result['data']['search']:
+                repo_data = pr_details_result['data']['search']
+                pr_count = repo_data['issueCount']
                 
-                # 3. Filtra: se a contagem for >= 100, mantém o repositório
                 if pr_count >= MIN_PRS_REQUIRED:
-                    all_filtered_repos.append(repo_data)
+                    # Como a busca não retorna o nameWithOwner, adicionamos manualmente
+                    repo_info = {'nameWithOwner': full_name, 'pullRequests': {'totalCount': pr_count}}
+                    all_filtered_repos.append(repo_info)
                     print(f"  [{repos_checked_count}/{MAX_REPOS_TO_CHECK}] ✅ {full_name}: {pr_count} PRs. (Mantido)")
                 else:
                     print(f"  [{repos_checked_count}/{MAX_REPOS_TO_CHECK}] ❌ {full_name}: {pr_count} PRs. (Descartado)")
+            else:
+                # Se a API retornar um erro no JSON (diferente de um erro HTTP)
+                print(f"  [{repos_checked_count}/{MAX_REPOS_TO_CHECK}] ❗️ Falha ao obter dados para {full_name}. Resposta: {pr_details_result}")
 
             time.sleep(0.3) # Pequena pausa para evitar Rate Limit
         
@@ -137,7 +188,7 @@ def fetch_process_and_filter():
 
     return all_filtered_repos
 
-def save_to_json(data, filename="repositorios_filtrados_em_lotes.json"):
+def save_to_json(data, filename="repositorios_filtrados_em_lotes2.json"):
     """Salva os dados coletados em um arquivo JSON."""
     with open(filename, 'w', encoding='utf-8') as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
