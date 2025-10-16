@@ -21,6 +21,7 @@ Este relatório apresenta uma análise estatística completa de **13.933 Pull Re
 4. **Variáveis Discretas**: Número de revisões e comentários são contagens discretas, melhor tratadas por testes não-paramétricos.
 
 **Interpretação dos valores de ρ (rho):**
+
 - |ρ| < 0.1: Desprezível
 - 0.1 ≤ |ρ| < 0.3: Fraca
 - 0.3 ≤ |ρ| < 0.5: Moderada
@@ -32,18 +33,20 @@ Este relatório apresenta uma análise estatística completa de **13.933 Pull Re
 ## 📈 Estatísticas Descritivas
 
 ### Distribuição dos Estados
+
 - **MERGED**: 9.458 PRs (67.88%)
 - **CLOSED**: 4.475 PRs (32.12%)
 
 ### Métricas Principais
-| Métrica | Média | Mediana | Desvio Padrão |
-|---------|-------|---------|---------------|
-| Tempo de Análise (dias) | 47.57 | 3.03 | 163.50 |
-| Tamanho Total (linhas) | - | - | - |
-| Número de Arquivos | - | - | - |
-| Número de Participantes | 4.29 | 4.00 | - |
-| Número de Comentários | 15.24 | 8.00 | 24.83 |
-| Número de Revisões | 7.27 | 2.00 | 16.50 |
+
+| Métrica                 | Média | Mediana | Desvio Padrão |
+| ----------------------- | ----- | ------- | ------------- |
+| Tempo de Análise (dias) | 47.57 | 3.03    | 163.50        |
+| Tamanho Total (linhas)  | -     | -       | -             |
+| Número de Arquivos      | -     | -       | -             |
+| Número de Participantes | 4.29  | 4.00    | -             |
+| Número de Comentários   | 15.24 | 8.00    | 24.83         |
+| Número de Revisões      | 7.27  | 2.00    | 16.50         |
 
 ---
 
@@ -54,10 +57,12 @@ Este relatório apresenta uma análise estatística completa de **13.933 Pull Re
 #### **RQ 01: Tamanho dos PRs × Feedback Final**
 
 **Resultado:**
+
 - **Spearman ρ = 0.0797** (p < 0.001) - Correlação Desprezível mas Significativa
 - **Pearson r = -0.0350** (p < 0.001)
 
 **Análise por Categoria:**
+
 ```
 Categoria        | % CLOSED | % MERGED
 -----------------|----------|----------
@@ -69,6 +74,7 @@ Muito Grande     | 29.72%   | 70.28%
 
 **Interpretação:**
 Apesar da correlação desprezível, há uma tendência interessante: **PRs pequenos têm maior taxa de rejeição** (35.22%) comparado aos demais. Isso pode indicar que:
+
 - PRs muito pequenos podem ser vistos como triviais ou incompletos
 - PRs médios e grandes (não extremos) têm melhor taxa de aprovação
 - A complexidade do PR importa mais que o tamanho absoluto
@@ -80,9 +86,11 @@ Apesar da correlação desprezível, há uma tendência interessante: **PRs pequ
 #### **RQ 02: Tempo de Análise × Feedback Final**
 
 **Resultado:**
+
 - **Spearman ρ = -0.1600** (p < 0.001) - Correlação Fraca Negativa
 
 **Tempo Médio por Estado:**
+
 ```
 Estado  | Média (dias) | Mediana (dias)
 --------|--------------|---------------
@@ -94,6 +102,7 @@ CLOSED  | 88.36        | 6.77
 Existe uma **correlação negativa fraca mas significativa**: PRs que levam mais tempo tendem a ser rejeitados.
 
 **Possíveis Explicações:**
+
 1. PRs problemáticos ficam "parados" esperando correções
 2. Falta de engajamento do autor leva ao fechamento
 3. PRs rapidamente revisados indicam qualidade ou simplicidade
@@ -106,10 +115,12 @@ Existe uma **correlação negativa fraca mas significativa**: PRs que levam mais
 #### **RQ 03: Descrição dos PRs × Feedback Final**
 
 **Resultado:**
+
 - **Spearman ρ = 0.1111** (p < 0.001) - Correlação Fraca Positiva
 - **Pearson r = -0.0072** (p = 0.396) - Não significativo
 
 **Taxa de Aprovação por Presença de Descrição:**
+
 ```
 Descrição       | % CLOSED | % MERGED
 ----------------|----------|----------
@@ -121,6 +132,7 @@ Com Descrição   | 30.86%   | 69.14%
 Este é um dos **resultados mais impactantes**: PRs sem descrição têm **76.56% de taxa de rejeição**!
 
 **Implicações Práticas:**
+
 - Descrição é **ESSENCIAL** para aprovação
 - Não é apenas o tamanho da descrição que importa (correlação fraca de Spearman)
 - A **presença** de qualquer descrição já aumenta dramaticamente as chances
@@ -132,10 +144,12 @@ Este é um dos **resultados mais impactantes**: PRs sem descrição têm **76.56
 #### **RQ 04: Interações × Feedback Final**
 
 **Resultado:**
+
 - **Participantes**: Spearman ρ = 0.1028 (p < 0.001) - Fraca Positiva
 - **Comentários**: Spearman ρ = -0.0716 (p < 0.001) - Desprezível Negativa
 
 **Médias por Estado:**
+
 ```
 Estado  | Participantes | Comentários
 --------|---------------|-------------
@@ -144,11 +158,13 @@ CLOSED  | 4.50          | 16.03
 ```
 
 **Interpretação:**
-Resultado contraintuitivo: 
+Resultado contraintuitivo:
+
 - Mais participantes correlaciona levemente com aprovação
 - Mais comentários correlaciona levemente com rejeição
 
 **Hipóteses:**
+
 1. PRs problemáticos geram mais discussão (comentários)
 2. PRs simples e corretos são aprovados rapidamente com poucos comentários
 3. Engajamento de múltiplos participantes pode indicar interesse/importância
@@ -163,10 +179,12 @@ Resultado contraintuitivo:
 #### **RQ 05: Tamanho dos PRs × Número de Revisões**
 
 **Resultado:**
+
 - **Spearman ρ = 0.3904** (p < 0.001) - **Correlação Moderada Positiva**
 - **Pearson r = -0.0005** (p = 0.955) - Não significativo
 
 **Média de Revisões por Categoria:**
+
 ```
 Categoria        | Média | Mediana
 -----------------|-------|--------
@@ -177,9 +195,10 @@ Muito Grande     | 16.52 | 5.0
 ```
 
 **Interpretação:**
-Esta é a **correlação mais forte na Dimensão A**! 
+Esta é a **correlação mais forte na Dimensão A**!
 
 **Insights:**
+
 - PRs maiores requerem **6x mais revisões** que pequenos
 - Relação **não-linear** (Pearson não significativo, Spearman sim)
 - Cada aumento de categoria aproximadamente **dobra** o número de revisões
@@ -191,6 +210,7 @@ Esta é a **correlação mais forte na Dimensão A**!
 #### **RQ 06: Tempo de Análise × Número de Revisões**
 
 **Resultado:**
+
 - **Spearman ρ = 0.3496** (p < 0.001) - **Correlação Moderada Positiva**
 - **Pearson r = 0.1628** (p < 0.001)
 
@@ -198,11 +218,13 @@ Esta é a **correlação mais forte na Dimensão A**!
 Mais revisões levam a mais tempo - relação esperada e lógica.
 
 **Ciclo de Feedback:**
+
 ```
 Mais Revisões → Mais Tempo → Mais Discussão → Mais Refinamento
 ```
 
 **Ponto de Atenção:** Embora mais revisões possam melhorar qualidade, também:
+
 - Aumentam tempo até merge
 - Podem causar fadiga em revisores e autores
 - Retardam entrega de valor
@@ -214,13 +236,15 @@ Mais Revisões → Mais Tempo → Mais Discussão → Mais Refinamento
 #### **RQ 07: Descrição dos PRs × Número de Revisões**
 
 **Resultado:**
+
 - **Spearman ρ = 0.0197** (p = 0.020) - **Correlação Desprezível**
 - **Pearson r = -0.0318** (p < 0.001)
 
 **Interpretação:**
 Tamanho da descrição **NÃO prediz** número de revisões necessárias.
 
-**Conclusão:** 
+**Conclusão:**
+
 - Descrição é importante para **aprovação** (RQ03)
 - Mas não afeta significativamente o **processo de revisão**
 - Qualidade do código importa mais que documentação para ciclos de revisão
@@ -230,6 +254,7 @@ Tamanho da descrição **NÃO prediz** número de revisões necessárias.
 #### **RQ 08: Interações × Número de Revisões**
 
 **Resultado:**
+
 - **Participantes**: Spearman ρ = 0.5395 (p < 0.001) - **Correlação Forte**
 - **Comentários**: Spearman ρ = 0.4588 (p < 0.001) - **Correlação Moderada**
 
@@ -237,11 +262,13 @@ Tamanho da descrição **NÃO prediz** número de revisões necessárias.
 Esta é a **correlação mais forte de todo o estudo**!
 
 **Relação Bidirecional:**
+
 ```
 Mais Revisões ⟷ Mais Participantes ⟷ Mais Comentários
 ```
 
 **Insights:**
+
 1. Cada ciclo de revisão traz novos participantes
 2. Discussão gera novas revisões
 3. Processo iterativo de refinamento colaborativo
@@ -258,6 +285,7 @@ Mais Revisões ⟷ Mais Participantes ⟷ Mais Comentários
 **R² = 0.5191** (51.91% da variância explicada)
 
 **Coeficientes:**
+
 ```
 Variável                     | Coeficiente | Interpretação
 -----------------------------|-------------|--------------------------------
@@ -269,6 +297,7 @@ tamanho_total                | -0.000003   | Efeito desprezível
 ```
 
 **Interpretação:**
+
 - **Comentários e participantes** são os principais preditores
 - **Tamanho, descrição e tempo** têm efeito muito pequeno no modelo
 - **R² de 0.52** é bom para ciências sociais/engenharia de software
@@ -278,33 +307,39 @@ tamanho_total                | -0.000003   | Efeito desprezível
 
 ## 🎯 Conclusões Gerais e Recomendações
 
-### 1. **DESCRIÇÃO É ESSENCIAL** 
+### 1. **DESCRIÇÃO É ESSENCIAL**
+
 - ✅ 69% de aprovação COM descrição
 - ❌ 23% de aprovação SEM descrição
 - **Recomendação:** SEMPRE incluir descrição detalhada
 
 ### 2. **TAMANHO MODERADO É IDEAL**
+
 - PRs médios (50-500 linhas) têm melhor taxa de aprovação
 - PRs muito pequenos podem parecer incompletos
 - PRs grandes requerem 6x mais revisões
 - **Recomendação:** Dividir grandes mudanças em PRs menores
 
 ### 3. **VELOCIDADE IMPORTA**
+
 - PRs aprovados: mediana de 2.1 dias
 - PRs rejeitados: mediana de 6.8 dias
 - **Recomendação:** Responder rapidamente a feedback, manter momentum
 
 ### 4. **ENGAJAMENTO É DOUBLE-EDGED SWORD**
+
 - Mais participantes → melhor para aprovação
 - Mais comentários → pode indicar problemas
 - **Recomendação:** Buscar revisões de qualidade, não quantidade de discussão
 
 ### 5. **CICLO ITERATIVO COLABORATIVO**
+
 - Forte correlação revisões ↔ interações (ρ = 0.54)
 - Processo natural de refinamento
 - **Recomendação:** Aceitar que PRs complexos requerem múltiplas iterações
 
 ### 6. **BALANCEAR QUALIDADE E VELOCIDADE**
+
 - Mais revisões melhoram qualidade mas aumentam tempo
 - Trade-off entre perfeição e entrega
 - **Recomendação:** Definir critérios claros de "pronto para merge"

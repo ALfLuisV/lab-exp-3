@@ -1,4 +1,5 @@
 # 🎤 Resumo Executivo para Apresentação
+
 ## Análise Estatística de Pull Requests
 
 ---
@@ -6,11 +7,14 @@
 ## 📊 SLIDE 1: Visão Geral
 
 ### Objetivo da Pesquisa
+
 Identificar fatores que influenciam:
+
 - ✅ **Aprovação** de Pull Requests (MERGED vs CLOSED)
 - 🔄 **Número de Revisões** necessárias
 
 ### Dataset
+
 - **13.933 Pull Requests** analisados
 - Repositórios open-source
 - **67.88% aprovados**, 32.12% rejeitados
@@ -20,16 +24,21 @@ Identificar fatores que influenciam:
 ## 📊 SLIDE 2: Metodologia
 
 ### Por que Spearman? 🔬
+
 ✅ **Dados não seguem distribuição normal**
+
 - Teste de Shapiro-Wilk: todas variáveis com p < 0.05
 
 ✅ **Presença de outliers**
+
 - 13.8% dos PRs são outliers em tamanho
 
 ✅ **Relações não-lineares**
+
 - Spearman captura relações monotônicas
 
 ✅ **Robustez**
+
 - Baseado em rankings, resistente a valores extremos
 
 ---
@@ -60,6 +69,7 @@ Identificar fatores que influenciam:
 ### Qual o tamanho ideal de um PR?
 
 **Taxas de Rejeição por Categoria:**
+
 ```
 Pequeno       (≤50 linhas):    35% ❌
 Médio         (50-200):        30% ❌  ← IDEAL
@@ -70,6 +80,7 @@ Muito Grande  (>500):          30% ❌
 **Surpreendente**: PRs muito pequenos têm MAIOR rejeição!
 
 **Impacto no Número de Revisões:**
+
 ```
 Pequeno:       2.7 revisões
 Muito Grande:  16.5 revisões  (6x mais!) 🔄
@@ -86,6 +97,7 @@ Muito Grande:  16.5 revisões  (6x mais!) 🔄
 ### ⚡ Tempo de Análise
 
 **Medianas:**
+
 ```
 ✅ PRs APROVADOS:   2.1 dias
 ❌ PRs REJEITADOS:  6.8 dias
@@ -96,6 +108,7 @@ Muito Grande:  16.5 revisões  (6x mais!) 🔄
 **Correlação**: ρ = -0.1600 (fraca **negativa**)
 
 **Interpretação**:
+
 - PRs que "ficam parados" tendem à rejeição
 - Velocidade indica qualidade ou simplicidade
 - Falta de resposta = perda de interesse
@@ -109,12 +122,14 @@ Muito Grande:  16.5 revisões  (6x mais!) 🔄
 ### 👥 Participantes vs Comentários
 
 **Efeito na Aprovação:**
+
 ```
 Participantes:  ρ = 0.1028  (fraca positiva)  ✅
 Comentários:    ρ = -0.0716 (desprezível neg) ⚠️
 ```
 
 **Médias por Estado:**
+
 ```
               Participantes  |  Comentários
 MERGED:           4.2       |     14.9
@@ -122,6 +137,7 @@ CLOSED:           4.5       |     16.0
 ```
 
 **Insight Contraintuitivo:**
+
 - Mais comentários ≠ melhor
 - Pode indicar **problemas** sendo discutidos
 - PRs bons são aprovados rapidamente com pouca discussão
@@ -135,6 +151,7 @@ CLOSED:           4.5       |     16.0
 ### 🔄 O que Aumenta o Número de Revisões?
 
 **Correlações com Número de Revisões:**
+
 ```
 1. 👥 Participantes:  ρ = 0.5395  ⭐⭐ FORTE!
 2. 💬 Comentários:    ρ = 0.4588  ⭐  MODERADA
@@ -144,6 +161,7 @@ CLOSED:           4.5       |     16.0
 ```
 
 **Ciclo Iterativo Natural:**
+
 ```
 Mais Revisões → Mais Participantes → Mais Comentários
       ↑                                      ↓
@@ -159,11 +177,13 @@ Mais Revisões → Mais Participantes → Mais Comentários
 ### 🤖 Regressão Linear: Predição de Revisões
 
 **Performance do Modelo:**
+
 ```
 R² = 0.5191  (51.91% da variância explicada)
 ```
 
 **Principais Preditores:**
+
 ```
 1. Comentários:     +0.459 revisões por comentário  📈
 2. Participantes:   +0.239 revisões por pessoa      📈
@@ -173,6 +193,7 @@ R² = 0.5191  (51.91% da variância explicada)
 ```
 
 **Interpretação:**
+
 - **Interações** são o principal driver de revisões
 - Tamanho e descrição não são bons preditores no modelo linear
 - 48% da variância vem de fatores **não medidos** (qualidade do código, expertise, etc.)
@@ -184,6 +205,7 @@ R² = 0.5191  (51.91% da variância explicada)
 ### 🗺️ Visão Panorâmica das Relações
 
 **Correlações Mais Fortes:**
+
 ```
 🟢 Participantes ↔ Revisões:     +0.54  (FORTE)
 🟢 Comentários ↔ Revisões:       +0.46  (MODERADA)
@@ -193,6 +215,7 @@ R² = 0.5191  (51.91% da variância explicada)
 ```
 
 **Padrão Identificado:**
+
 - **Variáveis de interação** (participantes, comentários) dominam o processo de revisão
 - **Características do PR** (tamanho, descrição) têm efeito menor
 - **Processo colaborativo** é mais importante que métricas técnicas
@@ -204,6 +227,7 @@ R² = 0.5191  (51.91% da variância explicada)
 ### 🎯 Ações Concretas para Desenvolvedores
 
 #### 1. 📝 **SEMPRE Inclua Descrição**
+
 ```
 Impacto: 3x mais aprovação
 Tempo: 5 minutos
@@ -211,6 +235,7 @@ ROI: ALTÍSSIMO ⭐⭐⭐
 ```
 
 #### 2. 📏 **Mantenha PRs Médios (50-500 linhas)**
+
 ```
 Benefícios:
 - 30% rejeição (vs 35% pequenos)
@@ -219,12 +244,14 @@ Benefícios:
 ```
 
 #### 3. ⚡ **Responda em < 2 dias**
+
 ```
 Meta: Responder feedback em até 2 dias
 Efeito: Mantém momentum e interesse
 ```
 
 #### 4. ✂️ **Divida PRs Grandes**
+
 ```
 Antes: 1 PR de 2000 linhas → 16.5 revisões
 Depois: 4 PRs de 500 linhas → 6.8 revisões cada
@@ -232,6 +259,7 @@ Ganho: Aprovação mais rápida
 ```
 
 #### 5. 🤝 **Aceite o Processo Iterativo**
+
 ```
 Revisões ↔ Discussão ↔ Refinamento
 É NORMAL e SAUDÁVEL para PRs complexos!
@@ -270,6 +298,7 @@ Revisões ↔ Discussão ↔ Refinamento
 > **"Comunicação clara (descrição) + Tamanho gerenciável + Velocidade de resposta = Aprovação"**
 
 ### Fórmula do PR Perfeito:
+
 ```
 ✅ Descrição detalhada (contexto, motivação, impacto)
 ✅ 50-500 linhas (dividir se maior)
@@ -279,6 +308,7 @@ Revisões ↔ Discussão ↔ Refinamento
 ```
 
 ### Resultado Esperado:
+
 ```
 📈 +3x chances de aprovação
 ⚡ 3x mais rápido (2 dias vs 7 dias)
@@ -293,22 +323,27 @@ Revisões ↔ Discussão ↔ Refinamento
 ### ❓ Perguntas Frequentes
 
 **Q1: "PRs muito pequenos também são rejeitados. Por quê?"**
+
 - A: Podem parecer incompletos ou triviais
 - Recomendação: Agrupe mudanças relacionadas
 
 **Q2: "Como balancear velocidade e qualidade?"**
+
 - A: Definir critérios claros de "pronto para merge"
 - Aceitar que "bom suficiente" é melhor que "perfeito"
 
 **Q3: "O modelo preditivo não usa tamanho. Isso não é estranho?"**
+
 - A: Tamanho afeta revisões **indiretamente** (via comentários)
 - Efeito direto é pequeno depois de controlar para interações
 
 **Q4: "Devo evitar discussões nos PRs?"**
+
 - A: Não! Discussão saudável é normal
 - Evite: Discussões intermináveis sobre estilo/preferências
 
 **Q5: "Estas recomendações se aplicam a todos os projetos?"**
+
 - A: Dados são de repos open-source
 - Adapte ao contexto do seu projeto
 
@@ -319,18 +354,22 @@ Revisões ↔ Discussão ↔ Refinamento
 ### 🔮 Pesquisas Futuras
 
 1. **Análise Qualitativa** 📝
+
    - Conteúdo das descrições (NLP)
    - Qualidade dos comentários
 
 2. **Machine Learning** 🤖
+
    - Predição de aprovação (classificação)
    - Features adicionais (linguagem, complexidade ciclomática)
 
 3. **Análise Temporal** 📅
+
    - Evolução das práticas ao longo do tempo
    - Impacto de mudanças de processo
 
 4. **Causalidade** 🔬
+
    - Experimentos controlados (A/B testing)
    - Inferência causal
 
@@ -356,6 +395,7 @@ Revisões ↔ Discussão ↔ Refinamento
 ```
 
 ### 🔗 Links
+
 - **GitHub**: github.com/ALfLuisV/lab-exp-3
 - **Dataset**: 13.933 PRs de repos open-source
 - **Ferramentas**: Python + Seaborn + SciPy + Scikit-learn
@@ -365,11 +405,13 @@ Revisões ↔ Discussão ↔ Refinamento
 ## 🙏 Obrigado!
 
 ### Contato
+
 - 📧 Email: [seu-email]
 - 💼 LinkedIn: [seu-linkedin]
 - 🐙 GitHub: @ALfLuisV
 
 ### Dúvidas?
+
 **Abra uma issue no repositório!**
 
 ---
