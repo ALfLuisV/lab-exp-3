@@ -1,0 +1,9 @@
+Variavel,MERGED_Mediana,CLOSED_Mediana,MannWhitney_U,p_value
+tempo_analise_dias,2.135,6.77,16976686.0,1.607033732686166e-79
+tamanho_total_linhas,68.0,42.0,23247846.0,4.938501886745042e-21
+tamanho_descricao_caracteres,1232.0,1017.0,24069403.5,2.7483712507908163e-39
+num_participantes,3.0,3.0,23798282.5,6.9590485260643155e-34
+num_comentarios,7.0,9.0,19292499.5,2.981743480374917e-17
+num_revisoes,3.0,1.0,29989049.5,0.0
+num_arquivos_alterados,3.0,2.0,23989977.5,1.2978487509350283e-38
+linhas_adicionadas,45.0,28.0,23060079.0,1.0533939079662305e-17
