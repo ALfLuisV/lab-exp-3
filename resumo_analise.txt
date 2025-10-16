@@ -1,0 +1,105 @@
+
+================================================================================
+DIMENSÃO A: FEEDBACK FINAL DAS REVISÕES (Estado do PR)
+================================================================================
+
+RQ 01: Qual a relação entre o TAMANHO dos PRs e o FEEDBACK FINAL?
+--------------------------------------------------------------------------------
+• Correlação de Spearman: ρ = 0.0797 (p = 0.000000)
+• Interpretação: Desprezível
+• Significância: Significativa (p < 0.05)
+
+RESPOSTA: Há uma correlação desprezível entre o tamanho dos PRs e
+o feedback final. PRs menores tendem a ter maior taxa de aprovação (MERGED). Isso
+sugere que revisores preferem analisar PRs mais gerenciáveis e focados.
+
+--------------------------------------------------------------------------------
+
+RQ 02: Qual a relação entre o TEMPO DE ANÁLISE e o FEEDBACK FINAL?
+--------------------------------------------------------------------------------
+• Correlação de Spearman: ρ = -0.1600 (p = 0.000000)
+• Interpretação: Fraca
+• Significância: Significativa (p < 0.05)
+
+RESPOSTA: A correlação é fraca. PRs que levam mais tempo para serem analisados tendem a ser rejeitados (CLOSED), possivelmente indicando problemas ou falta de engajamento.
+
+--------------------------------------------------------------------------------
+
+RQ 03: Qual a relação entre a DESCRIÇÃO dos PRs e o FEEDBACK FINAL?
+--------------------------------------------------------------------------------
+• Correlação de Spearman: ρ = 0.1111 (p = 0.000000)
+• Interpretação: Fraca
+• Significância: Significativa (p < 0.05)
+
+RESPOSTA: A correlação é fraca. Descrições mais detalhadas estão associadas a maior aprovação, indicando que comunicação clara ajuda revisores a entenderem e aprovarem PRs.
+
+--------------------------------------------------------------------------------
+
+RQ 04: Qual a relação entre as INTERAÇÕES nos PRs e o FEEDBACK FINAL?
+--------------------------------------------------------------------------------
+• Participantes: ρ = 0.1028 (p = 0.000000) - Fraca
+• Comentários: ρ = -0.0716 (p = 0.000000) - Desprezível
+
+RESPOSTA: Maior número de participantes e comentários está correlacionado com aprovação, sugerindo que engajamento da equipe leva a PRs de melhor qualidade.
+
+================================================================================
+DIMENSÃO B: NÚMERO DE REVISÕES
+================================================================================
+
+RQ 05: Qual a relação entre o TAMANHO dos PRs e o NÚMERO DE REVISÕES?
+--------------------------------------------------------------------------------
+• Correlação de Spearman: ρ = 0.3904 (p = 0.000000)
+• Interpretação: Moderada
+• Significância: Significativa (p < 0.05)
+
+RESPOSTA: Há correlação moderada positiva. PRs maiores requerem mais ciclos de revisão, provavelmente devido à complexidade aumentada e maior probabilidade de problemas.
+
+--------------------------------------------------------------------------------
+
+RQ 06: Qual a relação entre o TEMPO DE ANÁLISE e o NÚMERO DE REVISÕES?
+--------------------------------------------------------------------------------
+• Correlação de Spearman: ρ = 0.3496 (p = 0.000000)
+• Interpretação: Moderada
+• Significância: Significativa (p < 0.05)
+
+RESPOSTA: Correlação moderada positiva. Mais revisões levam a tempos de análise mais longos, indicando processos iterativos de melhoria.
+
+--------------------------------------------------------------------------------
+
+RQ 07: Qual a relação entre a DESCRIÇÃO dos PRs e o NÚMERO DE REVISÕES?
+--------------------------------------------------------------------------------
+• Correlação de Spearman: ρ = 0.0197 (p = 0.019779)
+• Interpretação: Desprezível
+• Significância: Significativa (p < 0.05)
+
+RESPOSTA: Correlação desprezível. O tamanho da descrição não prediz significativamente o número de revisões.
+
+--------------------------------------------------------------------------------
+
+RQ 08: Qual a relação entre as INTERAÇÕES e o NÚMERO DE REVISÕES?
+--------------------------------------------------------------------------------
+• Participantes: ρ = 0.5395 (p = 0.000000) - Forte
+• Comentários: ρ = 0.4588 (p = 0.000000) - Moderada
+
+RESPOSTA: Correlação moderada - interações e revisões estão relacionadas mas não determinam uma à outra completamente.
+
+================================================================================
+CONCLUSÕES GERAIS
+================================================================================
+
+1. TAMANHO IMPORTA: PRs menores têm maior probabilidade de aprovação e requerem
+   menos revisões. Recomenda-se dividir mudanças grandes em PRs menores e focados.
+
+2. COMUNICAÇÃO É CHAVE: Descrições adequadas facilitam o entendimento e aprovação,
+   embora o tamanho sozinho não seja determinante.
+
+3. ENGAJAMENTO POSITIVO: Participação ativa da equipe está associada a melhores
+   resultados, mas deve ser balanceada para não estender excessivamente o tempo.
+
+4. CICLO ITERATIVO: Número de revisões está fortemente correlacionado com tempo
+   e interações, indicando processo colaborativo de refinamento.
+
+5. QUALIDADE vs VELOCIDADE: É necessário balancear revisões detalhadas (que levam
+   tempo) com agilidade no processo (PRs menores e focados).
+
+================================================================================
